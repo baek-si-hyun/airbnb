@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.airbnb.mapper.NewMapper">
+    <select id="findCondition" resultType="Long">
+        select lodging_ids from(select ROW_NUMBER() over(order by l.lodging_id) NUM, l.lodging_id as lodging_ids from lodging l left join lodging_room lr on l.lodging_id = lr.lodging_id left join lodging_price lp on l.lodging_id = lp.lodging_id
+        left join lodging_location ll on l.lodging_id = ll.lodging_id left join lodging_isresv li on l.lodging_id = li.lodging_id left join lodging_policy lpy on l.lodging_id = lpy.lodging_id
+        where lr.lodging_type2 = #{category} and lp.price_normal &gt; #{priceMin} and lp.price_normal &lt; #{priceMax}
+        and regexp_like(lr.lodging_type3, ${sqlv1}) and regexp_like(lr.lodging_type1, ${sqlv2})
+        <if test="checkList != null">
+            and
+            <foreach item="check" collection="checkList"  separator="and" >
+                l.lodging_covi like '%'||#{check}||'%'
+            </foreach>
+        </if>
+        and lr.lodging_beds &gt; #{minbeds} and lr.lodging_bedrooms &gt;#{minbedrooms})
+        where NUM between #{screenMin} and #{screenMax}
+
+    </select>
+</mapper>

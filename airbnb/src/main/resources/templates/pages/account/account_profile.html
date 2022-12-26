@@ -1,0 +1,305 @@
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/" data-is-hyperloop="true" data-hyperloop-version="1" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://a0.muscache.com/airbnb/static/packages/dls/dls-lite_cereal-32f4a55b7a0ed9ca55714ba7265a6c84.css" rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
+    <title>프로필 - 에어비앤비</title>
+    <link rel="stylesheet" href="/lib/css/account_profile.css">
+    <link rel="stylesheet" href="/lib/css/acc_header.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+
+<body class="with-new-header">
+    <div id="site-skip-links">
+        <a class="screen-reader-only screen-reader-only-focusable skip-to-content" data-hook="skip-to-content" href="#site-content">콘텐츠로 바로가기</a>
+        <span id="popups-everywhere-skip-link"></span>
+    </div>
+    <div id="smart-banner"></div>
+    <div id="flash-container" class="flash-container" role="alert" aria-live="assertive" th:fragment="account_pay4(id)">
+        <div id="iddiv" th:text="${id}" hidden></div>
+    </div>
+    <div id="education-overlay-root"></div>
+    <div data-application="true">
+        <div dir="ltr">
+            <div data-theme="" class="t1bgcr6e ">
+                <div>
+                    <div>
+                        <div style="--view-to-view-transition-element-opacity:0;--view-to-view-transition-element-visibility:hidden">
+                            <div class="_is5jnq">
+                                <div class="_16grqhk">
+                                    <!--acc_header nav-->
+                                    <div th:replace="fragment/acc_header :: acc_header"></div>
+                                    <!--acc_header nav-->
+                                    <main id="site-content">
+                                        <div class="_88xxct">
+                                            <div class="_1mb2uol" data-veloute="user_profile_frame" id="FMP-target">
+                                                <div class="_dj903s" data-testid="user-profile-content">
+                                                    <div class="_1h9muyam">
+                                                        <div class="_fjxhrpz">
+                                                            <div class="_1qpzr2d">
+                                                                <div class="_fvp3r0u">
+                                                                    <div class="_1sn7185i">
+                                                                        <div class="_1h6n1zu" style="display:inline-block;vertical-align:bottom;height:100%;width:100%;min-height:1px" role="img" aria-busy="false"><img class="_9ofhsl" style="object-fit:cover;vertical-align:bottom" aria-hidden="true" elementtiming="LCP-target" src="https://a0.muscache.com/defaults/user_pic-225x225.png?v=3" data-original-uri="https://a0.muscache.com/defaults/user_pic-225x225.png?v=3" />
+                                                                            <div class="_15p4g025" style="background-image:url(https://a0.muscache.com/defaults/user_pic-225x225.png?v=3);background-size:cover"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="_pdgm0p">
+                                                                    <a href="/users/edit-photo" class="_1sikdxcl">사진 업데이트하기</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_p03egf">
+                                                                <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;height:24px;width:24px;fill:currentColor" aria-hidden="true" focusable="false">
+                                                                    <path d="M16 .798l.555.37C20.398 3.73 24.208 5 28 5h1v12.5C29 25.574 23.21 31 16 31S3 25.574 3 17.5V5h1c3.792 0 7.602-1.27 11.445-3.832L16 .798zm0 2.394l-.337.213C12.245 5.52 8.805 6.706 5.352 6.952L5 6.972V17.5c0 6.831 4.716 11.357 10.713 11.497L16 29c6.133 0 11-4.56 11-11.5V6.972l-.352-.02c-3.453-.246-6.893-1.432-10.311-3.547L16 3.192zm7 7.394L24.414 12 13.5 22.914 7.586 17 9 15.586l4.5 4.499 9.5-9.5z" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="_1ob9ag1">본인 인증</div>
+                                                            <div class="_1v8nkzp">본인 인증 배지를 통해 본인 인증을 마쳤다는 사실을 다른 사용자에게보여줄 수 있습니다.</div>
+                                                            <a href="/account-fov?user_context=USER_PROFILE" class="_1dj2p4gk">배지 받기</a>
+                                                            <div class="_16f6zsb">
+                                                                <div class="_1k2miji"></div>
+                                                            </div>
+                                                            <div class="_149ig5a">
+                                                                <section>
+                                                                    <div class="_1i6o9hv">
+                                                                        <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                                                            <span class="_1gvh1f5">
+                                                                                <span id="leftName"></span>
+                                                                                인증 완료</span>
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="_p03egf">
+                                                                        <div class="_dj903s">
+                                                                            <div class="_l0bkzy6">
+                                                                                <div class="_1ahen39n">
+                                                                                    <span class="_1lz166q">
+                                                                                        <svg viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="display:block;height:16px;width:16px;fill:currentColor" aria-hidden="true" focusable="false">
+                                                                                            <path d="M13.102 2.537L15.365 4.8l-9.443 9.443L.057 8.378 2.32 6.115l3.602 3.602z" />
+                                                                                        </svg>
+                                                                                    </span>
+                                                                                    <span class="_1ax9t0a">이메일 주소</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="_l0bkzy6">
+                                                                                <div class="_1ahen39n">
+                                                                                    <span class="_1lz166q">
+                                                                                        <svg viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="display:block;height:16px;width:16px;fill:currentColor" aria-hidden="true" focusable="false">
+                                                                                            <path d="M13.102 2.537L15.365 4.8l-9.443 9.443L.057 8.378 2.32 6.115l3.602 3.602z" />
+                                                                                        </svg>
+                                                                                    </span>
+                                                                                    <span class="_1ax9t0a">전화번호</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="_17ctt5">
+                                                                        <div class="_16f6zsb">
+                                                                            <div class="_1k2miji"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="_rdxv8tm">
+                                                        <div class="_o7dyhr">
+                                                            <section>
+                                                                <div class="_1v3a3q7">
+                                                                    <div class="_15vo2nls">
+                                                                        <div class="_fvp3r0u">
+                                                                            <div class="_1sn7185i">
+                                                                                <div class="_1h6n1zu" style="display:inline-block;vertical-align:bottom;height:100%;width:100%;min-height:1px" role="img" aria-busy="false"><img class="_9ofhsl" style="object-fit:cover;vertical-align:bottom" aria-hidden="true" elementtiming="LCP-target" src="https://a0.muscache.com/defaults/user_pic-225x225.png?v=3" data-original-uri="https://a0.muscache.com/defaults/user_pic-225x225.png?v=3" />
+                                                                                    <div class="_15p4g025" style="background-image:url(https://a0.muscache.com/defaults/user_pic-225x225.png?v=3);background-size:cover"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="_1fopc40">
+                                                                        <div class="_a0kct9">
+                                                                            <!-- 사용자의 이름 출력 부분 -->
+                                                                            <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">안녕하세요. 저는<span id="rightName"></span>입니다.</h1>
+                                                                            <!-- 사용자의 이름 출력 부분 -->
+                                                                        </div>
+                                                                        <!-- 회원가입 연도 출력 부분 -->
+                                                                        <div class="_u5okn1">회원 가입:
+                                                                            <span id="confirmAtView"></span>
+                                                                        </div>
+                                                                        <!-- 회원가입 연도 출력 부분 -->
+                                                                    </div>
+                                                                    <div class="_14h4uoc">
+                                                                        <button type="button" class="_15rpys7s" id="button1">프로필 수정하기</button>
+                                                                        <span class="_nx67f0">
+                                                                            <a href="/users/edit-photo" class="_1sikdxcl">사진 업데이트하기</a>
+                                                                        </span>
+                                                                    </div>
+                                                                    <form data-veloute="user_profile_bio_edit_form" class="form66 _kkkkkkk" id="form66">
+                                                                        <div class="_1ou8uzt">
+                                                                            <label for="about12">
+                                                                                <div class="_1wgf3yo kksksks">소개</div>
+                                                                                <div class="_4l12l8">
+                                                                                    <div class="_1aoj0ap">
+                                                                                        <div dir="ltr">
+                                                                                            <textarea name="about" rows="4" class="_159914b" autocomplete="off" id="about12"></textarea>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="_1ou8uzt">
+                                                                            <div class="_v08k6k">
+                                                                                <div class="_e296pg" data-reach-combobox="">
+                                                                                    <div class="_1h4ezu9">
+                                                                                        <label class="_1yw7hpv" for="location">
+                                                                                            <div>위치</div>
+                                                                                            <div dir="ltr">
+                                                                                                <div class="_1msfbct">
+                                                                                                    <input aria-autocomplete="both" aria-controls="listbox--1" aria-expanded="false" aria-haspopup="listbox" role="combobox" data-reach-combobox-input="" class="_11f96ab" id="location" autocomplete="off" type="text" aria-describedby="" value="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <span class="_1w2kwxa" aria-live="polite" aria-atomic="true"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="_1ou8uzt">
+                                                                            <div class="_plk1gy">구사 언어</div>
+                                                                            <div class="_1fopc40"></div>
+                                                                            <div>
+                                                                                <button type="button" class="_15rpys7s">추가하기</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="_1ou8uzt">
+                                                                            <div class="_1h4ezu9">
+                                                                                <label class="_1yw7hpv" for="work">
+                                                                                    <div>직장</div>
+                                                                                    <div dir="ltr">
+                                                                                        <div class="_1msfbct">
+                                                                                            <input name="work" class="_11f96ab" id="work" autocomplete="off" type="text" aria-describedby="" value="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="_dmn8hc">
+                                                                            <button type="button" class="_za4ekfm" id="button2">취소</button>
+                                                                            <button disabled="" type="submit" class="_1ku51f04" data-veloute="user_profile_save_button" id="button33">저장</button>
+                                                                        </div>
+                                                                        <div class="_16f6zsb">
+                                                                            <div class="_1k2miji"></div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="_nx67f0">
+                                                                    <div class="_p03egf">
+                                                                        <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;height:24px;width:24px;fill:currentColor" aria-hidden="true" focusable="false">
+                                                                            <path d="M16 .798l.555.37C20.398 3.73 24.208 5 28 5h1v12.5C29 25.574 23.21 31 16 31S3 25.574 3 17.5V5h1c3.792 0 7.602-1.27 11.445-3.832L16 .798zm0 2.394l-.337.213C12.245 5.52 8.805 6.706 5.352 6.952L5 6.972V17.5c0 6.831 4.716 11.357 10.713 11.497L16 29c6.133 0 11-4.56 11-11.5V6.972l-.352-.02c-3.453-.246-6.893-1.432-10.311-3.547L16 3.192zm7 7.394L24.414 12 13.5 22.914 7.586 17 9 15.586l4.5 4.499 9.5-9.5z" />
+                                                                        </svg>
+                                                                    </div>
+                                                                    <div class="_1ob9ag1">본인 인증</div>
+                                                                    <div class="_1v8nkzp">본인 인증 배지를 통해 본인 인증을 마쳤다는 사실을다른 사용자에게 보여줄 수 있습니다.</div>
+                                                                    <a href="/account-fov?user_context=USER_PROFILE" class="_1dj2p4gk">배지 받기</a>
+                                                                    <div class="_16f6zsb">
+                                                                        <div class="_1k2miji"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="_nx67f0">
+                                                                    <div class="_149ig5a">
+                                                                        <section>
+                                                                            <div class="_1i6o9hv">
+                                                                                <h2 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                                                                    <!-- 사용자 이름 출력 부분 -->
+                                                                                    <span class="_1gvh1f5">종복 인증 완료</span>
+                                                                                    <!-- 사용자 이름 출력 부분 -->
+                                                                                </h2>
+                                                                            </div>
+                                                                            <div class="_p03egf">
+                                                                                <div class="_dj903s">
+                                                                                    <div class="_l0bkzy6">
+                                                                                        <div class="_1ahen39n">
+                                                                                            <span class="_1lz166q">
+                                                                                                <svg viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="display:block;height:16px;width:16px;fill:currentColor" aria-hidden="true" focusable="false">
+                                                                                                    <path d="M13.102 2.537L15.365 4.8l-9.443 9.443L.057 8.378 2.32 6.115l3.602 3.602z" />
+                                                                                                </svg>
+                                                                                            </span>
+                                                                                            <span class="_1ax9t0a">이메일 주소</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="_l0bkzy6">
+                                                                                        <div class="_1ahen39n">
+                                                                                            <span class="_1lz166q">
+                                                                                                <svg viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="display:block;height:16px;width:16px;fill:currentColor" aria-hidden="true" focusable="false">
+                                                                                                    <path d="M13.102 2.537L15.365 4.8l-9.443 9.443L.057 8.378 2.32 6.115l3.602 3.602z" />
+                                                                                                </svg>
+                                                                                            </span>
+                                                                                            <span class="_1ax9t0a">전화번호</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="_17ctt5">
+                                                                                <div class="_16f6zsb">
+                                                                                    <div class="_1k2miji"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-testid="user-profile-guidebooks">
+                                                                    <section>
+                                                                        <h2 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                                                            <span class="_1gvh1f5">
+                                                                                <div class="_5kaapu" id="review-section-title">
+                                                                                    <!--후기 개수 출력 부분-->
+                                                                                    <div class="_14tkmhr">
+                                                                                        <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;height:16px;width:16px;fill:currentColor" aria-hidden="true" focusable="false">
+                                                                                            <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd" />
+                                                                                        </svg>
+                                                                                    </div>후기 0개
+                                                                                </div>
+                                                                                <!--후기 개수 출력 부분-->
+                                                                            </span>
+                                                                        </h2>
+                                                                        <div class="_klarpw"></div>
+                                                                    </section>
+                                                                    <div class="_16f6zsb">
+                                                                        <div class="_1k2miji"></div>
+                                                                    </div>
+                                                                    <a href="/users/reviews" class="_1sikdxcl">내가 작성한 후기</a>
+                                                                    <div class="_16f6zsb">
+                                                                        <div class="_1k2miji"></div>
+                                                                    </div>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                </main>
+                            </div>
+                            <!--footer-->
+                            <div th:replace="fragment/footer :: footer"></div>
+                            <!--footer-->
+                        </div>
+                        <div class="t2pjd0h dir dir-ltr">
+                            <div class="t6qlz27 dir dir-ltr" data-testid="Incoming"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="_b21f4g">
+                <div aria-live="polite" aria-atomic="true"></div>
+                <div aria-live="assertive" aria-atomic="true"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="fb-root"></div>
+    <div id="authModals"></div>
+    <script src="/lib/js/acc_loginpop.js"></script>
+</body>
+<script src="/lib/js/account_profile.js"></script>
+
+</html>

@@ -1,0 +1,402 @@
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/" data-is-hyperloop="true" data-hyperloop-version="1" dir="ltr" class="js-focus-visible" style="--vh:9.75px; --vw:14.27px; --vw-unitless:1427; --vw-px:1427px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://a0.muscache.com/airbnb/static/packages/dls/dls-lite_cereal-32f4a55b7a0ed9ca55714ba7265a6c84.css" rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
+    <title>납세자 정보 관리 - 에어비앤비</title>
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="/lib/css/account_pay3.css">
+    <link rel="stylesheet" href="/lib/css/acc_header.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body class="with-new-header">
+    <div id="site-skip-links">
+        <a class="screen-reader-only screen-reader-only-focusable skip-to-content" data-hook="skip-to-content" href="https://www.airbnb.co.kr/account-settings/payments/tax-info#site-content">콘텐츠로
+            바로가기</a>
+        <span id="popups-everywhere-skip-link"></span>
+    </div>
+    <div id="smart-banner"></div>
+    <noscript>
+        <div class="alert alert-with-icon alert-error no-js-alert" data-nosnippet="true">
+            <i class="icon alert-icon icon-alert-alt"></i>죄송합니다. 에어비앤비 웹사이트의 일부는 자바스크립트가 활성화되어 있지 않으면 제대로 작동하지 않습니다.
+        </div>
+    </noscript>
+    <div id="flash-container" class="flash-container" role="alert" aria-live="assertive"></div>
+    <div id="education-overlay-root"></div>
+    <div data-application="true">
+        <div dir="ltr">
+            <div data-theme="" class="t1bgcr6e ">
+                <div>
+                    <div>
+                        <div style="--view-to-view-transition-element-opacity:0;--view-to-view-transition-element-visibility:hidden">
+                            <div class="_is5jnq">
+                                <div class="_16grqhk">
+                                    <!--acc_header nav-->
+                                    <div th:replace="fragment/acc_header :: acc_header"></div>
+                                    <!--acc_header nav-->
+                                    <main id="site-content">
+                                        <div class="_88xxct">
+                                            <div class="_mwt4r90">
+                                                <div style="margin-top:0;margin-bottom:0;margin-left:0;margin-right:0">
+                                                    <div style="margin-bottom:48px">
+                                                        <section>
+                                                            <div style="margin-top:40px;margin-bottom:40px">
+                                                                <nav aria-label="계정">
+                                                                    <ol class="_1ckj08w">
+                                                                        <li class="_36rlri">
+                                                                            <span class="_121z06r2">
+                                                                                <a href="/pages/account_main" class="_sgg9wmi" aria-busy="false">계정</a>
+                                                                            </span>
+                                                                        </li>
+                                                                        <li class="_36rlri">
+                                                                            <div class="_36rlri" style="margin-left:16px;margin-right:16px">
+                                                                                <svg viewbox="0 0 18 18" aria-hidden="true" focusable="false" style="height:10px;width:10px;fill:#767676">
+                                                                                    <path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <span aria-current="step" class="_121z06r2">결제 및 대금 수령</span>
+                                                                        </li>
+                                                                    </ol>
+                                                                </nav>
+                                                                <div style="margin-top:12px">
+                                                                    <h1 tabindex="-1" elementtiming="LCP-target" class="_14i3z6h">
+                                                                        <div class="_1yrl4d7p">결제 및 대금 수령</div>
+                                                                    </h1>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_2h22gn">
+                                                                <div class="_169grxv2">
+                                                                    <div id="account-settings-main-navigation-tabs">
+                                                                        <div class="_e296pg">
+                                                                            <div class="_1xkr92p" data-testid="tab-list-wrapper">
+                                                                                <div class="_qc3ank" role="tablist">
+                                                                                    <button type="button" id="tab--account-settings-main-navigation-tabs--0" aria-controls="panel--account-settings-main-navigation-tabs--0" aria-selected="false" class="_tns11i" role="tab" tabindex="-1" onclick="location.href='/pages/account_pay1'">결제</button>
+                                                                                    <button type="button" id="tab--account-settings-main-navigation-tabs--1" aria-controls="panel--account-settings-main-navigation-tabs--1" aria-selected="false" class="_tns11i" role="tab" onclick="location.href='/pages/account_pay2'" tabindex="-1">대금
+                                                                                        수령</button>
+                                                                                    <button type="button" id="tab--account-settings-main-navigation-tabs--2" aria-controls="panel--account-settings-main-navigation-tabs--2" aria-selected="true" class="_fd0fliz" role="tab">세금</button>
+                                                                                    <button type="button" id="tab--account-settings-main-navigation-tabs--3" aria-controls="panel--account-settings-main-navigation-tabs--3" aria-selected="false" class="_tns11i" role="tab" onclick="location.href='/pages/account_pay4'" tabindex="-1">게스트
+                                                                                        기부금</button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="_1wadwfl"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="_17pxz94u">
+                                                                    <div></div>
+                                                                </div>
+                                                            </div>
+                                                            <div dir="ltr">
+                                                                <div data-theme="" class="t1bgcr6e ">
+                                                                    <div>
+                                                                        <div class="_dj903s">
+                                                                            <div class="_jtezirx">
+                                                                                <div style="margin-top: 48px;"></div>
+                                                                                <div style="margin-top: 24px;"></div>
+                                                                                <div class="_dj903s">
+                                                                                    <div class="_1787zsai">
+                                                                                        <div style="margin-top: 48px; margin-bottom: 48px;">
+                                                                                            <div class="_7qp4lh"></div>
+                                                                                        </div>
+                                                                                        <section>
+                                                                                            <div class="_4uhhnx">
+                                                                                                <h2 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                                                                                    VAT(부가가치세)</h2>
+                                                                                            </div>
+                                                                                        </section>
+                                                                                        <div class="_1lcxkbl">VAT(부가가치세)를 등록했거나 출장 목적으로 숙박하는 경우에는 에어비앤비 서비스 수수료에
+                                                                                            VAT가 부과되지 않을 수도 있습니다. 시작하려면 납세자번호(사업자등록번호)를 입력하세요.
+                                                                                            <a href="https://www.airbnb.co.kr/help/article/436/what-is-vat-and-how-does-it-apply-to-me" class="_1sikdxcl">납세자 번호(사업자등록번호)에 대해 자세히 알아보기</a>
+                                                                                        </div>
+                                                                                        <div style="margin-top: 32px;">
+                                                                                            <div class="_6htn2u">
+                                                                                                <div style="margin-top: 24px; margin-bottom: 24px;">
+                                                                                                    <button type="button" class="_1ku51f04" id="pay3btn">납세자번호(사업자등록번호) 추가하기</button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div></div>
+                                                                            </div>
+                                                                            <div class="_1gjb1vzp">
+                                                                                <div class="_1j8lpo3">
+                                                                                    <section>
+                                                                                        <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; height: 48px; width: 48px; fill: rgb(227, 28, 95); stroke: currentcolor;">
+                                                                                            <g stroke="none">
+                                                                                                <path d="m9.1 6h29.8c.0552285 0 .1.04477153.1.1v33.2381966c0 .0552285-.0447715.1-.1.1-.0155245 0-.0308358-.0036145-.0447214-.0105573l-2.8105572-1.4052786c-.0281528-.0140764-.06129-.0140764-.0894428 0l-5.9105572 2.9552786c-.0281528.0140764-.06129.0140764-.0894428 0l-5.9105572-2.9552786c-.0281528-.0140764-.06129-.0140764-.0894428 0l-5.9105572 2.9552786c-.0281528.0140764-.06129.0140764-.0894428 0l-5.9105572-2.9552786c-.0281528-.0140764-.06129-.0140764-.0894428 0l-2.81055724 1.4052786c-.04939785.0246989-.10946515.0046765-.13416408-.0447213-.00694277-.0138856-.01055728-.0291969-.01055728-.0447214v-33.2381966c0-.05522847.04477153-.1.1-.1z" fill-opacity=".2"></path>
+                                                                                                <path d="m41.9 2c.5670123 0 1.0338239.4290107 1.0935453.98014288l.0064547.11985712v41.7381966c0 .6075132-.4924868 1.1-1.1 1.1-.1280772 0-.2548352-.0223648-.374647-.065766l-.117288-.0503641-5.409065-2.7050665-5.507065 2.7550665c-.2322602.1161301-.4953618.1451626-.7430427.0870976l-.1223412-.0362907-.1184861-.0508069-5.508065-2.7550665-5.508065 2.7550665c-.2322602.1161301-.4953618.1451626-.7430427.0870976l-.1223412-.0362907-.1184861-.0508069-5.508065-2.7550665-5.40806504 2.7050665c-.46813963.2340698-1.0233925.1030016-1.34191782-.2852576l-.0745121-.1023605-.05937495-.1043168c-.05727787-.1145558-.09396211-.2379334-.10872436-.3645059l-.00740573-.1274291v-41.7381966c0-.56701234.4290107-1.03382387.98014288-1.09354535l.11985712-.00645465zm-.9 2h-34v39.381l4.508065-2.2530665c.2322602-.1161301.4953618-.1451626.7430427-.0870976l.1223412.0362907.1184861.0508069 5.508065 2.7540665 5.508065-2.7540665c.2322602-.1161301.4953618-.1451626.7430427-.0870976l.1223412.0362907.1184861.0508069 5.508065 2.7540665 5.508065-2.7540665c.2322602-.1161301.4953618-.1451626.7430427-.0870976l.1223412.0362907.1184861.0508069 4.508065 2.2540665zm-9 23v2h-16v-2zm0-6v2h-16v-2zm0-6v2h-16v-2z"></path>
+                                                                                            </g>
+                                                                                        </svg>
+                                                                                        <div class="_1dm60y4">
+                                                                                            <h2 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">VAT(부가가치세)
+                                                                                                청구서는 어디에서 확인할 수 있나요?</h2>
+                                                                                        </div>
+                                                                                        <div class="_7a96q1">출장용 숙소 예약 후 발송되는 예약 확인 이메일에서 VAT(부가가치세) 청구서로 연결되는 링크를
+                                                                                            찾으실 수 있습니다.
+                                                                                            <a target="_blank" href="https://www.airbnb.co.kr/help/article/438/where-do-i-find-my-vat-invoice" class="_1sikdxcl">자세히 알아보기</a>
+                                                                                        </div>
+                                                                                    </section>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="_b21f4g">
+                                                                        <div aria-live="polite" aria-atomic="true"></div>
+                                                                        <div aria-live="assertive" aria-atomic="true"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <span id="FMP-target"></span>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </main>
+                                </div>
+                                <!--footer-->
+                                <div th:replace="fragment/footer :: footer"></div>
+                                <!--footer-->
+                            </div>
+                            <div class="t2pjd0h dir dir-ltr">
+                                <div class="t6qlz27 dir dir-ltr" data-testid="Incoming"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_b21f4g">
+                    <div aria-live="polite" aria-atomic="true"></div>
+                    <div aria-live="assertive" aria-atomic="true"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #fb_xdm_frame_https {
+            visibility: hidden
+        }
+    </style>
+    <div id="fb-root"></div>
+    <div id="authModals"></div>
+    <script type="text/javascript" nonce="" src="./host_결제_대금수령_3_files/dwTHBPNzk"></script>
+    <div id="scroll-hit-tester-0" style="top: 0px; position: absolute; height: 1px; width: 1px; z-index: -1; contain: strict;"></div>
+    <div dir="ltr" id="itrdiv" style="display:none;">
+        <div class="_1t0jy5tw"></div>
+        <section>
+            <div class="_vxvq8x" data-testid="modal-container">
+                <div class="_z4lmgp">
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                    <div class="_z4lmgp">
+                        <div role="dialog" aria-label="VAT Info Modal" aria-modal="true" class="_1ucy1zjv" style="position: relative;">
+                            <div class="_pa35zs">
+                                <button aria-label="닫기" type="button" class="_oda838">
+                                    <span class="_e296pg">
+                                        <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                            <path d="m6 6 20 20"></path>
+                                            <path d="m26 6-20 20"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <header class="_1youxq0">
+                                <div class="_1tng6ym"></div>
+                                <div class="_9t7ktw">
+                                    <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                        <div class="_1q9sh65">납세자번호(사업자등록번호) 추가하기</div>
+                                    </h1>
+                                </div>
+                                <div class="_rrmdgl"></div>
+                            </header>
+                            <div class="_12kfhdn">
+                                <div class="_1lcxkbl">유럽연합 집행위원회(EC)에 등록되어 있는 경우 인증에 최대 48시간이 소요될 수 있습니다. 완료되면 이메일을 보내드리겠습니다. 납세자
+                                    번호(사업자등록번호)에 대한 자세한 정보는
+                                    <a target="_blank" href="/help/article/437/how-do-i-provide-my-vat-id-number" class="_1sikdxcl">여기</a>에서 확인하세요.
+                                </div>
+                                <div style="margin-top: 32px;">
+                                    <div class="_ttgom0">
+                                        <label class="_19nw8j1" for="country_selector">
+                                            <div class="_zhftk97">
+                                                <div class="_11hx67x">국가/지역</div>
+                                            </div>
+                                            <div class="_3hmsj">
+                                                <select name="country_selector" class="_1iwku6d" id="country_selector">
+                                                    <option value=""></option>
+                                                    <option value="GR">그리스</option>
+                                                    <option value="NL">네덜란드</option>
+                                                    <option value="NO">노르웨이</option>
+                                                    <option value="NZ">뉴질랜드</option>
+                                                    <option value="TW">대만</option>
+                                                    <option value="DK">덴마크</option>
+                                                    <option value="DE">독일</option>
+                                                    <option value="LV">라트비아</option>
+                                                    <option value="RO">루마니아</option>
+                                                    <option value="LU">룩셈부르크</option>
+                                                    <option value="LT">리투아니아</option>
+                                                    <option value="MT">몰타</option>
+                                                    <option value="BE">벨기에</option>
+                                                    <option value="BY">벨라루스</option>
+                                                    <option value="BG">불가리아</option>
+                                                    <option value="SA">사우디아라비아</option>
+                                                    <option value="RS">세르비아</option>
+                                                    <option value="SE">스웨덴</option>
+                                                    <option value="CH">스위스</option>
+                                                    <option value="ES">스페인</option>
+                                                    <option value="SK">슬로바키아</option>
+                                                    <option value="SI">슬로베니아</option>
+                                                    <option value="SG">싱가포르</option>
+                                                    <option value="AE">아랍에미리트</option>
+                                                    <option value="IS">아이슬란드</option>
+                                                    <option value="IE">아일랜드</option>
+                                                    <option value="EE">에스토니아</option>
+                                                    <option value="GB">영국</option>
+                                                    <option value="AU">오스트레일리아</option>
+                                                    <option value="AT">오스트리아</option>
+                                                    <option value="IT">이탈리아</option>
+                                                    <option value="ID">인도네시아</option>
+                                                    <option value="JP">일본</option>
+                                                    <option value="CZ">체코</option>
+                                                    <option value="CL">칠레</option>
+                                                    <option value="KE">케냐</option>
+                                                    <option value="CO">콜롬비아</option>
+                                                    <option value="HR">크로아티아</option>
+                                                    <option value="CY">키프로스</option>
+                                                    <option value="TH">태국</option>
+                                                    <option value="TR">터키</option>
+                                                    <option value="PT">포르투갈</option>
+                                                    <option value="PL">폴란드</option>
+                                                    <option value="FR">프랑스</option>
+                                                    <option value="FI">핀란드</option>
+                                                    <option value="KR">한국</option>
+                                                    <option value="HU">헝가리</option>
+                                                    <option value="ESCN">Canary Islands</option>
+                                                </select>
+                                            </div>
+                                        </label>
+                                        <div class="_lmil0">
+                                            <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                                <g fill="none">
+                                                    <path d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 24px;">
+                                    <div class="_1jj61m9">
+                                        <label class="_1yw7hpv" for="vat_number">
+                                            <div class="_1m2ich98">
+                                                <div class="_11hx67x">납세자번호(사업자등록번호) 추가하기</div>
+                                            </div>
+                                            <div dir="ltr">
+                                                <div class="_fywymp7"><input name="vat_number" class="_c5rhl5 focus-visible" id="vat_number" autocomplete="off" type="text" aria-describedby="" value=""></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 24px;">
+                                    <div class="_1jj61m9">
+                                        <label class="_1yw7hpv" for="name">
+                                            <div class="_1m2ich98">
+                                                <div class="_11hx67x">등록된 이름</div>
+                                            </div>
+                                            <div dir="ltr">
+                                                <div class="_fywymp7"><input name="name" class="_c5rhl5" id="name" autocomplete="off" type="text" aria-describedby="" value=""></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 24px;">
+                                    <div class="cx1v2qp dir dir-ltr" style="border-radius: 8px;">
+                                        <div class="_jro6t0">
+                                            <div class="_e296pg" style="flex: 1 1 0%;">
+                                                <div class="_sbmagf" style="background: none; border-radius: 8px 8px 0px 0px; inset: 0px 0px -1px;"></div>
+                                                <div class="_tddesd">
+                                                    <label class="_1yw7hpv" for="address1">
+                                                        <div class="_1m2ich98">
+                                                            <div class="_11hx67x">주소 입력란 1</div>
+                                                        </div>
+                                                        <div dir="ltr">
+                                                            <div class="_fywymp7"><input name="address1" placeholder="예시: 123 Main St." class="_c5rhl5" id="address1" autocomplete="off" type="text" aria-describedby="" value=""></div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="_t26glb" style="inset: 0px 0px -1px; border-radius: 8px 8px 0px 0px; border-top-color: var(--iw-ihca); border-right-color: var(--iw-ihca); border-bottom-color: var(--iw-ihca); border-left-color: var(--iw-ihca); border-width: 1px; z-index: 0;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="_jro6t0">
+                                            <div class="_e296pg" style="flex: 1 1 0%;">
+                                                <div class="_sbmagf" style="background: none; border-radius: 0px 0px 8px 8px; inset: 0px 0px -1px;"></div>
+                                                <div class="_tddesd">
+                                                    <label class="_1yw7hpv" for="address2">
+                                                        <div class="_1m2ich98">
+                                                            <div class="_11hx67x">주소 입력란 2(선택사항)</div>
+                                                        </div>
+                                                        <div dir="ltr">
+                                                            <div class="_fywymp7"><input name="address2" placeholder="예시: #1728" class="_c5rhl5" id="address2" autocomplete="off" type="text" aria-describedby="" value=""></div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="_t26glb" style="inset: 0px 0px -1px; border-radius: 0px 0px 8px 8px; border-top-color: var(--iw-ihca); border-right-color: var(--iw-ihca); border-bottom-color: var(--iw-ihca); border-left-color: var(--iw-ihca); border-width: 1px; z-index: 0;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 24px;">
+                                    <div class="_1jj61m9">
+                                        <label class="_1yw7hpv" for="city">
+                                            <div class="_1m2ich98">
+                                                <div class="_11hx67x">시</div>
+                                            </div>
+                                            <div dir="ltr">
+                                                <div class="_fywymp7"><input name="city" placeholder="도시를 입력하세요." class="_c5rhl5" id="city" autocomplete="off" type="text" aria-describedby="" value=""></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 24px;">
+                                    <div class="_1jj61m9">
+                                        <label class="_1yw7hpv" for="state">
+                                            <div class="_1m2ich98">
+                                                <div class="_11hx67x">특별시/광역시/도</div>
+                                            </div>
+                                            <div dir="ltr">
+                                                <div class="_fywymp7"><input name="state" placeholder="특별시/광역시/도를 입력하세요." class="_c5rhl5" id="state" autocomplete="off" type="text" aria-describedby="" value=""></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 24px;">
+                                    <div class="_1jj61m9">
+                                        <label class="_1yw7hpv" for="zip">
+                                            <div class="_1m2ich98">
+                                                <div class="_11hx67x">우편번호</div>
+                                            </div>
+                                            <div dir="ltr">
+                                                <div class="_fywymp7"><input name="zip" placeholder="우편번호를 입력하세요." class="_c5rhl5" id="zip" autocomplete="off" type="text" aria-describedby="" value=""></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer class="_zgc1p6">
+                                <button type="button" class="_1dj2p4gk">취소</button>
+                                <button type="button" class="_1ku51f04 submitbtn">추가</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                </div>
+            </div>
+        </section>
+        <div class="_b21f4g">
+            <div aria-live="polite" aria-atomic="true"></div>
+            <div aria-live="assertive" aria-atomic="true"></div>
+        </div>
+    </div>
+    <script src="/lib/js/account_pay3.js"></script>
+    <script src="/lib/js/acc_loginpop.js"></script>
+</body>
+
+</html>

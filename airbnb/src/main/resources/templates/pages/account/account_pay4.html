@@ -1,0 +1,181 @@
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/" data-is-hyperloop="true" data-hyperloop-version="1" dir="ltr" class="js-focus-visible" style="--vh:9.75px; --vw:14.27px; --vw-unitless:1427; --vw-px:1427px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://a0.muscache.com/airbnb/static/packages/dls/dls-lite_cereal-32f4a55b7a0ed9ca55714ba7265a6c84.css" rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
+    <title>게스트 기부금 - 계정 설정 - 에어비앤비</title>
+    <link rel="stylesheet" href="/lib/css/account_pay4.css">
+    <link rel="stylesheet" href="/lib/css/acc_header.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+
+<body class="with-new-header">
+    <div id="site-skip-links">
+        <a class="screen-reader-only screen-reader-only-focusable skip-to-content" data-hook="skip-to-content" href="https://www.airbnb.co.kr/account-settings/payments/guest-contributions#site-content">콘텐츠로 바로가기</a>
+        <span id="popups-everywhere-skip-link"></span>
+    </div>
+    <div id="smart-banner"></div>
+    <noscript>
+        <div class="alert alert-with-icon alert-error no-js-alert" data-nosnippet="true">
+            <i class="icon alert-icon icon-alert-alt"></i>죄송합니다. 에어비앤비 웹사이트의 일부는 자바스크립트가 활성화되어 있지 않으면 제대로 작동하지 않습니다.
+        </div>
+    </noscript>
+    <div id="flash-container" class="flash-container" role="alert" aria-live="assertive" th:fragment="account_pay4(id)">
+        <div id="iddiv" th:text="${id}" hidden></div>
+    </div>
+    <div id="education-overlay-root"></div>
+    <div data-application="true">
+        <div dir="ltr">
+            <div data-theme="" class="t1bgcr6e ">
+                <div>
+                    <div>
+                        <div style="--view-to-view-transition-element-opacity:0;--view-to-view-transition-element-visibility:hidden">
+                            <div class="_is5jnq">
+                                <div class="_16grqhk">
+                                    <!--acc_header nav-->
+                                    <div th:replace="fragment/acc_header :: acc_header"></div>
+                                    <!--acc_header nav-->
+                                    <main id="site-content">
+                                        <div class="_88xxct">
+                                            <div class="_mwt4r90">
+                                                <div style="margin-top:0;margin-bottom:0;margin-left:0;margin-right:0">
+                                                    <div style="margin-bottom:48px">
+                                                        <section>
+                                                            <div style="margin-top:40px;margin-bottom:40px">
+                                                                <nav aria-label="계정">
+                                                                    <ol class="_1ckj08w">
+                                                                        <li class="_36rlri">
+                                                                            <span class="_121z06r2">
+                                                                                <a href="/pages/account_main" class="_sgg9wmi" aria-busy="false">계정</a>
+                                                                            </span>
+                                                                        </li>
+                                                                        <li class="_36rlri">
+                                                                            <div class="_36rlri" style="margin-left:16px;margin-right:16px">
+                                                                                <svg viewbox="0 0 18 18" aria-hidden="true" focusable="false" style="height:10px;width:10px;fill:#767676">
+                                                                                    <path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <span aria-current="step" class="_121z06r2">결제 및 대금 수령</span>
+                                                                        </li>
+                                                                    </ol>
+                                                                </nav>
+                                                                <div style="margin-top:12px">
+                                                                    <h1 tabindex="-1" elementtiming="LCP-target" class="_14i3z6h">
+                                                                        <div class="_1yrl4d7p">결제 및 대금 수령</div>
+                                                                    </h1>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_2h22gn">
+                                                                <div class="_169grxv2">
+                                                                    <div style="margin-top: 36px;">
+                                                                        <div class="_o7z5pg" data-testid="title">게스트 기부금</div>
+                                                                        <p class="_uzky3zu">에어비앤비 숙소에 머물렀거나 체험에 참여했던 게스트는 이제 따스한 환대에 대한 감사의 표시로 호스트에게 후원금을 보낼 수 있습니다. 앞으로 게스트가 보내는 후원금을 자동으로 받거나 거절하도록 설정하실 수 있습니다.</p>
+                                                                        <div class="_25vsd5">
+                                                                            <div class="_ttfedy0">
+                                                                                <div class="_hgs47m">
+                                                                                    <div class="_10ejfg4u">
+                                                                                        <div style="margin-right: 24px;">
+                                                                                            <label class="_rin72m" for="contributions-opt-out">
+                                                                                                <span id="contributions-opt-out--label" class="_czm8crp">기부금 받기 허용하기</span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="_ni9axhe">
+                                                                                        <button id="contributions-opt-out" role="checkbox" aria-checked="true" aria-labelledby="contributions-opt-out--label" type="button" class="_17y21tl">
+                                                                                            <input type="hidden" name="contributions-opt-out" id="donateInput" value="">
+                                                                                            <div class="_1nqg52lg" id="change1"></div>
+                                                                                            <div class="_v76fopi" id="change2">
+                                                                                                <div class="_1mfsr54">
+                                                                                                    <div class="_1m1auhrh" id="change3"></div>
+                                                                                                    <svg viewbox="0 0 52 52" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="3" focusable="false" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round" style="height: 30px; width: 30px; display: block; overflow: visible;">
+                                                                                                        <path d="m19.1 25.2 4.7 6.2 12.1-11.2"></path>
+                                                                                                    </svg>
+                                                                                                </div>
+                                                                                                <div class="_1abyqs14" id="change4">
+                                                                                                    <div class="_pna3r" id="change5">
+                                                                                                        <svg viewbox="0 0 52 52" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="3" focusable="false" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round" style="height: 30px; width: 30px; display: block; overflow: visible;">
+                                                                                                            <path d="m19.1 19.1 l14 14 m 0 -14 l -14 14"></path>
+                                                                                                        </svg>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="_a7a5sx">차감할 대금이 없을 경우, 기부금은 설정하신 대금 수령 계좌로 전액 입금됩니다. 기부금 처리에는<a target="_blank" href="https://www.airbnb.co.kr/terms/payments_terms" class="_1vcb898f">결제 서비스 약관</a>이 적용됩니다. 기부금은 세금/세액 공제 대상이 아닐 수 있습니다.</div>
+                                                                        <div class="_178v3zus">게스트 기부금에 대한 자세한 내용은
+                                                                            <a target="_blank" href="https://www.airbnb.co.kr/help/article/2796/what-happens-when-i-receive-a-card-or-contribution-from-a-guest" class="_1vcb898f">도움말 센터</a>를 참조하세요.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="_10bmve21">
+                                                                    <div class="_1bpvmi6">
+                                                                        <div class="_16tcko6">
+                                                                            <div class="_11pizxn">
+                                                                                <svg viewbox="0 0 24 24" aria-hidden="true" focusable="false" style="height: 48px; width: 48px; display: block; fill: rgb(96, 182, 181);">
+                                                                                    <path d="m17.102 17.642a4.353 4.353 0 01-.875.669 6.413 6.413 0 01-2.395.83 7.707 7.707 0 01-6.061-2.075.672.672 0 01-.162-.207c-.141-.324.117-.867.244-1.166a8.437 8.437 0 01 .684-1.23.598.598 0 01 .994-.13 7.892 7.892 0 005.295 2.614 8.495 8.495 0 001.365-.014 3.525 3.525 0 00 .735-.095c.596-.186.596.41.176.804zm-1.923-12.222a2 2 0 10-.001 0z"></path>
+                                                                                    <path d="m17.596 7.174a.5.5 0 11-.001 0zm-11.346-3.174h.75v.75a.5.5 0 001 0v-.75h.75a.5.5 0 000-1h-.75v-.75a.5.5 0 00-1 0v .75h-.75a.5.5 0 000 1zm8.187 3.26a3.18 3.18 0 002.513-5.1.5.5 0 00-.797.604 2.142 2.142 0 11-1.006-.736.5.5 0 00 .33-.944 3.138 3.138 0 00-1.04-.176 3.177 3.177 0 000 6.353zm6.609 8.079a6.215 6.215 0 01-2.371 4.453l-.018.018a6.308 6.308 0 00-.06 1.029c-.012.98-.038 1.597-.414 1.9-.587.473-3.11.624-3.76-.04-.09-.093-.192-.196-.444-1.181a9.884 9.884 0 01-1.115.021c-.178.882-.277 1.043-.391 1.16a2.764 2.764 0 01-1.788.447 3.848 3.848 0 01-1.971-.408c-.395-.317-.403-.942-.413-1.666a5.331 5.331 0 00-.046-.778 9.863 9.863 0 01-2.548-1.9 2.453 2.453 0 00-.402-.065 1.354 1.354 0 01-1.159-.566 10.044 10.044 0 01-.137-3.644 1.226 1.226 0 011.131-.718.94.94 0 00 .357-.08 12.637 12.637 0 00 .826-1.12c.266-.382.563-.808.869-1.218-1.476-2.543-1.37-2.912-1.023-3.203a4.004 4.004 0 013.744-.23 4.236 4.236 0 011.158.948c3.085-.596 6.384.188 8.117 1.947l.043.05a1.518 1.518 0 00 .39-1.211.502.502 0 01 .398-.583.496.496 0 01 .584.389 2.52 2.52 0 01-.73 2.18 6.194 6.194 0 011.173 4.069zm-.997-.07a5.3 5.3 0 00-1.574-4.122c-1.538-1.56-4.687-2.237-7.488-1.61a.501.501 0 01-.505-.182 3.42 3.42 0 00-1.047-.927 3.121 3.121 0 00-2.424.015 16.838 16.838 0 001.212 2.323.5.5 0 01-.035.56 36.1 36.1 0 00-1.045 1.447 5.468 5.468 0 01-1.143 1.413 1.782 1.782 0 01-.753.21c-.278.029-.282.038-.327.136a13.736 13.736 0 00 .117 2.776 2.265 2.265 0 01 .384.028 1.564 1.564 0 011.012.37 8.915 8.915 0 002.379 1.751.493.493 0 01 .065.04c.405.26.414.867.423 1.562a3.64 3.64 0 00 .083.945 4.884 4.884 0 002.34.012 9.564 9.564 0 00 .24-1.091.5.5 0 01 .533-.408 9.127 9.127 0 001.804-.036.43.43 0 01 .06-.003.5.5 0 01 .487.383 7.055 7.055 0 00 .341 1.202 4.952 4.952 0 002.373-.108c.024-.096.03-.741.036-1.128.01-.882.018-1.536.43-1.798a5.216 5.216 0 002.022-3.76zm-3.86-4.352a6.302 6.302 0 00-4.546-.588.5.5 0 00 .268.963 5.33 5.33 0 013.762.482.5.5 0 00 .515-.857z" fill="#484848"></path>
+                                                                                </svg>
+                                                                                <div class="_1lk5ous">기부금을 받고 싶지 않으세요?</div>
+                                                                                <div class="_abrv9k">
+                                                                                    <div class="_1vk19cb">게스트가 보낸 기부금을 받고 싶지 않으시다면, 자선 단체에 기부하실 수 있는 옵션도 있습니다.
+                                                                                    </div>
+                                                                                    <div class="_1vk19cb">기부하실 곳을 찾고 계신다면, 코로나19 사태에 구호 활동을 펼치는 비영리 단체를 소개해드립니다.
+                                                                                    </div>
+                                                                                </div>
+                                                                                <ul class="_eyqrvf">
+                                                                                    <li>
+                                                                                        <a rel="noopener noreferrer" target="_blank" href="https://internationalmedicalcorps.org/" class="_1vcb898f">국제의료봉사단</a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a rel="noopener noreferrer" target="_blank" href="https://www.rescue.org/" class="_1vcb898f">국제구호위원회</a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a rel="noopener noreferrer" target="_blank" href="https://www.ifrc.org/en/who-we-are/the-movement/ifrc/" class="_1vcb898f">국제적십자사연맹</a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </main>
+                                </div>
+                                <!--footer-->
+                                <div th:replace="fragment/footer :: footer"></div>
+                                <!--footer-->
+                            </div>
+                            <div class="t2pjd0h dir dir-ltr">
+                                <div class="t6qlz27 dir dir-ltr" data-testid="Incoming"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_b21f4g">
+                    <div aria-live="polite" aria-atomic="true"></div>
+                    <div aria-live="assertive" aria-atomic="true"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #fb_xdm_frame_https {
+            visibility: hidden
+        }
+    </style>
+    <div id="fb-root"></div>
+    <div id="authModals"></div>
+    <div id="scroll-hit-tester-0" style="top: 0px; position: absolute; height: 1px; width: 1px; z-index: -1; contain: strict;"></div>
+    <script src="/lib/acc_loginpop.js"></script>
+    <script src="/lib/js/account_pay4.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,533 @@
+<html lang="ko"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org/">
+<div th:fragment="login_popup">
+    <div dir="ltr" class="login_main" hidden>
+        <div class="_1t0jy5tw"></div>
+        <section>
+            <div class="_vxvq8x" data-testid="modal-container">
+                <div class="_z4lmgp">
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                    <div class="_z4lmgp">
+                        <div role="dialog" aria-label="로그인" aria-modal="true" class="_1ucy1zjv" style="position: relative;">
+                            <div class="_pa35zs"><button aria-label="닫기" type="button" class="_oda838"><span class="_e296pg"><svg
+                                    viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    focusable="false"
+                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                        <path d="m6 6 20 20"></path>
+                        <path d="m26 6-20 20"></path>
+
+                            </svg>
+                            </span>
+                            </button>
+                            </div>
+                            <header class="_1youxq0">
+                                <div class="_1tng6ym"></div>
+                                <div class="_9t7ktw">
+                                    <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                        <div class="_1q9sh65">로그인 또는 회원 가입</div>
+                                    </h1>
+                                </div>
+                                <div class="_rrmdgl"></div>
+                            </header>
+                            <div class="_12kfhdn">
+                                <div data-testid="login-pane">
+                                    <div class="_je2ned">
+                                        <h3 class="_u72b34">에어비앤비에 오신 것을 환영합니다.</h3>
+                                    </div>
+                                    <form method="POST" onsubmit="return emailCheck()" data-testid="auth-form" target="iframe1">
+                                        <input type="hidden" name="authenticity_token" value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0=">
+                                        <input type="hidden" name="from" value="email_login"><input type="hidden" name="airlock_id" value="">
+                                        <div>
+                                            <div class="_1jj61m9"><label class="_1yw7hpv" for="email-login-email">
+                                                <div class="_1m2ich98">
+                                                    <div class="_11hx67x">이메일</div>
+                                                </div>
+                                                <div dir="ltr">
+                                                    <div class="_js9i23">
+                                                        <input placeholder="이메일" name="email"
+                                                                                data-testid="email-login-email" aria-required="true" class="_yrzsibu"
+                                                                                id="email-login-email" autocomplete="off" inputmode="email" type="text"
+                                                                                aria-describedby="email-login-email-InputField-help" value="" required>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            </div>
+                                            <div class="_klarpw errmsg1"></div>
+                                        </div>
+                                        <div id="airlock-inline-container1" aria-live="polite"></div>
+                                        <div class="_wfo3ii">
+                                            <button data-testid="signup-login-submit-btn" type="submit" class="_6hkhatt"
+                                                                     data-veloute="submit-btn-cypress">
+                                                <span class="_jxxpcd">
+                                                    <span class="_kaq6tx" style="background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%); --mouse-x:51.3462; --mouse-y:30.2083;"></span>
+                                                </span>
+                                                <span class="_tcp689">계속 </span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div class="_1x0diny1">
+                                        <div class="_16fq9mb">또는</div>
+                                    </div>
+                                    <div class="_88xxct">
+                                        <div class="_88sa87">
+                                            <div class="_jwti9r">
+                                                <form action="/oauth_connect?from=facebook_login&amp;service=facebook" method="POST"
+                                                      data-testid="auth-form"><input type="hidden" name="authenticity_token"
+                                                                                     value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0="><button
+                                                        data-testid="social-auth-button-facebook" aria-label="페이스북으로 로그인하기" type="submit"
+                                                        class="_snbhip0">
+                                                    <div class="_1a2vq1h">
+                                                        <div class="_fvfsqm"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                                                                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                                                                  focusable="false"
+                                                                                  style="height: 20px; width: 20px; display: block; fill: currentcolor;">
+                                                            <defs>
+                                                                <path id="a" d="M.001 0H24v23.854H.001z"></path>
+                                                            </defs>
+                                                            <g fill="none" fill-rule="evenodd">
+                                                                <mask id="b" fill="#fff">
+                                                                    <use xlink:href="#a"></use>
+                                                                </mask>
+                                                                <path
+                                                                        d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.078V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.491 0-1.956.925-1.956 1.874V12h3.328l-.532 3.469h-2.796v8.385C19.612 22.954 24 17.99 24 12"
+                                                                        fill="#1877F2" mask="url(#b)"></path>
+                                                                <path
+                                                                        d="M16.671 15.469L17.203 12h-3.328V9.749c0-.949.465-1.874 1.956-1.874h1.513V4.922s-1.374-.234-2.686-.234c-2.741 0-4.533 1.66-4.533 4.668V12H7.078v3.469h3.047v8.385a12.09 12.09 0 003.75 0V15.47h2.796"
+                                                                        fill="#FFF"></path>
+                                                            </g>
+                                                        </svg></div><div class="_bc4egv">페이스북으로 로그인하기</div><div class="_fvfsqm"></div>
+                                                    </div>
+                                                </button></form>
+                                            </div>
+                                            <div class="_jwti9r">
+                                                <form action="/oauth_connect?from=google_login&amp;service=google" method="POST"
+                                                      data-testid="auth-form"><input type="hidden" name="authenticity_token"
+                                                                                     value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0="><button
+                                                        data-testid="social-auth-button-google" aria-label="구글로 로그인하기" type="submit" class="_snbhip0">
+                                                    <div class="_1a2vq1h">
+                                                        <div class="_fvfsqm"><svg viewBox="0 0 18 18" aria-hidden="true"
+                                                                                  focusable="false" style="height: 20px; width: 20px; display: block;">
+                                                            <g fill="none" fill-rule="evenodd">
+                                                                <path
+                                                                        d="M9 3.48c1.69 0 2.83.73 3.48 1.34l2.54-2.48C13.46.89 11.43 0 9 0 5.48 0 2.44 2.02.96 4.96l2.91 2.26C4.6 5.05 6.62 3.48 9 3.48z"
+                                                                        fill="#EA4335"></path>
+                                                                <path
+                                                                        d="M17.64 9.2c0-.74-.06-1.28-.19-1.84H9v3.34h4.96c-.1.83-.64 2.08-1.84 2.92l2.84 2.2c1.7-1.57 2.68-3.88 2.68-6.62z"
+                                                                        fill="#4285F4"></path>
+                                                                <path
+                                                                        d="M3.88 10.78A5.54 5.54 0 0 1 3.58 9c0-.62.11-1.22.29-1.78L.96 4.96A9.008 9.008 0 0 0 0 9c0 1.45.35 2.82.96 4.04l2.92-2.26z"
+                                                                        fill="#FBBC05"></path>
+                                                                <path
+                                                                        d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.84-2.2c-.76.53-1.78.9-3.12.9-2.38 0-4.4-1.57-5.12-3.74L.97 13.04C2.45 15.98 5.48 18 9 18z"
+                                                                        fill="#34A853"></path>
+                                                                <path d="M0 0h18v18H0V0z"></path>
+                                                            </g>
+                                                        </svg></div>
+                                                        <div class="_bc4egv">구글로 로그인하기</div>
+                                                        <div class="_fvfsqm"></div>
+                                                    </div>
+                                                </button></form>
+                                            </div>
+                                            <div class="_jwti9r">
+                                                <form action="/oauth_connect?from=apple_login&amp;service=apple" method="POST"
+                                                      data-testid="auth-form"><input type="hidden" name="authenticity_token"
+                                                                                     value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0="><button
+                                                        data-testid="social-auth-button-apple" aria-label="Apple 계정으로 계속하기" type="submit"
+                                                        class="_snbhip0">
+                                                    <div class="_1a2vq1h">
+                                                        <div class="_fvfsqm"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                                                                  aria-hidden="true" focusable="false"
+                                                                                  style="height: 20px; width: 20px; display: block; fill: currentcolor;">
+                                                            <path
+                                                                    d="m13.3 2.1a5.1 5.1 0 0 1 3.8-2.1 5.1 5.1 0 0 1 -1.2 3.8 4.1 4.1 0 0 1 -3.6 1.7 4.5 4.5 0 0 1 1-3.4zm-5 3.7c-2.8 0-5.8 2.5-5.8 7.3 0 4.9 3.5 10.9 6.3 10.9 1 0 2.5-1 4-1s2.6.9 4 .9c3.1 0 5.3-6.4 5.3-6.4a5.3 5.3 0 0 1 -3.2-4.9 5.2 5.2 0 0 1 2.6-4.5 5.4 5.4 0 0 0 -4.7-2.4c-2 0-3.5 1.1-4.3 1.1-.9 0-2.4-1-4.2-1z">
+                                                            </path>
+                                                        </svg></div>
+                                                        <div class="_bc4egv">Apple 계정으로 계속하기</div>
+                                                        <div class="_fvfsqm"></div>
+                                                    </div>
+                                                </button></form>
+                                            </div>
+                                            <div class="_jwti9r">
+                                                <button id="social-member" aria-label="회원가입"
+                                                                         type="button" class="_snbhip0">
+                                                <div class="_1a2vq1h">
+                                                    <div class="_fvfsqm"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                                                              aria-hidden="true" focusable="false"
+                                                                              style="display: block; height: 20px; width: 20px; fill: currentcolor;">
+                                                        <path
+                                                                d="m22 1c2.6887547 0 4.8818181 2.12230671 4.9953805 4.78311038l.0046195.21688962v20c0 2.6887547-2.1223067 4.8818181-4.7831104 4.9953805l-.2168896.0046195h-12c-2.6887547 0-4.88181811-2.1223067-4.99538049-4.7831104l-.00461951-.2168896v-20c0-2.6887547 2.12230671-4.88181811 4.78311038-4.99538049l.21688962-.00461951zm0 2h-12c-1.59768088 0-2.90366088 1.24891996-2.99490731 2.82372721l-.00509269.17627279v20c0 1.5976809 1.24891996 2.9036609 2.82372721 2.9949073l.17627279.0050927h12c1.5976809 0 2.9036609-1.24892 2.9949073-2.8237272l.0050927-.1762728v-20c0-1.59768088-1.24892-2.90366088-2.8237272-2.99490731zm-6 22c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1-1-.4477153-1-1 .4477153-1 1-1zm4-4c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1-1-.4477153-1-1 .4477153-1 1-1zm-4 0c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1-1-.4477153-1-1 .4477153-1 1-1zm-4 0c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1-1-.4477153-1-1 .4477153-1 1-1zm8-4c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1-1-.4477153-1-1 .4477153-1 1-1zm-4 0c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1-1-.4477153-1-1 .4477153-1 1-1zm-4 0c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1-1-.4477153-1-1 .4477153-1 1-1zm8-4c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1-1-.4477153-1-1 .4477153-1 1-1zm-4 0c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1-1-.4477153-1-1 .4477153-1 1-1zm-4 0c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1-1-.4477153-1-1 .4477153-1 1-1z">
+                                                        </path>
+                                                    </svg></div>
+                                                    <div class="_bc4egv">회원가입</div>
+                                                    <div class="_fvfsqm"></div>
+                                                </div>
+                                            </button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                </div>
+            </div>
+        </section>
+        <div class="_b21f4g">
+            <div aria-live="polite" aria-atomic="true"></div>
+            <div aria-live="assertive" aria-atomic="true"></div>
+        </div>
+    </div>
+    <!-- 로그인 이메일 입력 끝-->
+    <!-- 로그인 새로운 아이디 입력시 회원가입-->
+    <div dir="ltr" class="login_member" hidden>
+        <div class="_1t0jy5tw"></div>
+        <section>
+            <div class="_vxvq8x" data-testid="modal-container">
+                <div class="_z4lmgp">
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                    <div class="_z4lmgp">
+                        <div role="dialog" aria-label="로그인" aria-modal="true" class="_1ucy1zjv" style="position: relative;">
+                            <div class="_pa35zs backmain"><button aria-label="닫기" type="button" class="_oda838"><span class="_e296pg"><svg
+                                    viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    focusable="false"
+                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                        <g fill="none">
+                          <path
+                                  d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932">
+                          </path>
+                        </g>
+                      </svg></span></button></div>
+                            <header class="_1youxq0">
+                                <div class="_1tng6ym"></div>
+                                <div class="_9t7ktw">
+                                    <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                        <div class="_1q9sh65">회원 가입 완료하기</div>
+                                    </h1>
+                                </div>
+                                <div class="_rrmdgl"></div>
+                            </header>
+                            <div class="_12kfhdn">
+                                <div data-testid="login-pane">
+                                    <div>
+                                        <form method="POST" onsubmit="return member()" novalidate="" data-testid="auth-form"><input type="hidden"
+                                                                                                                                                     name="authenticity_token"
+                                                                                                                                                     value="V4$.airbnb.co.kr$He0XzpCOSiE$N9J8_b77PpfGbPOry39T4YKaPXPg5iD3g0Hiy5Qhvf8="><input
+                                                type="hidden" name="from" value="email_signup">
+                                            <div class="cx1v2qp dir dir-ltr" style="border-radius: 8px;">
+                                                <div class="_jro6t0">
+                                                    <div class="_e296pg" style="flex: 1 1 0%;">
+                                                        <div class="_sbmagf"
+                                                             style="background: none; border-radius: 8px 8px 0px 0px; inset: 0px 0px -1px;"></div>
+                                                        <div class="_tddesd"><label class="_1yw7hpv" for="email-signup-userfirst">
+                                                            <div class="_1m2ich98">
+                                                                <div class="_11hx67x">이름(예: 길동)</div>
+                                                            </div>
+                                                            <div dir="ltr">
+                                                                <div class="_js9i23"><input name="email-signup-userfirst" placeholder="이름(예: 길동)"
+                                                                                            data-testid="email-signup-userfirst" class="_yrzsibu"
+                                                                                            id="email-signup-userfirst" autocomplete="off" type="text"
+                                                                                            aria-describedby="" value=""></div>
+                                                            </div>
+                                                        </label></div>
+                                                        <div class="_t26glb"
+                                                             style="inset: 0px 0px -1px; border-radius: 8px 8px 0px 0px; border-top-color: var(--iw-ihca); border-right-color: var(--iw-ihca); border-bottom-color: var(--iw-ihca); border-left-color: var(--iw-ihca); border-width: 1px; z-index: 0;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_jro6t0">
+                                                    <div class="_e296pg" style="flex: 1 1 0%;">
+                                                        <div class="_sbmagf"
+                                                             style="background: none; border-radius: 0px 0px 8px 8px; inset: 0px 0px -1px;"></div>
+                                                        <div class="_tddesd"><label class="_1yw7hpv" for="email-signup-userlast">
+                                                            <div class="_1m2ich98">
+                                                                <div class="_11hx67x">성(예: 홍)</div>
+                                                            </div>
+                                                            <div dir="ltr">
+                                                                <div class="_js9i23"><input name="user[last_name]" placeholder="성(예: 홍)"
+                                                                                            data-testid="email-signup-userlast" class="_yrzsibu"
+                                                                                            id="email-signup-userlast" autocomplete="off" type="text" aria-describedby=""
+                                                                                            value=""></div>
+                                                            </div>
+                                                        </label></div>
+                                                        <div class="_t26glb"
+                                                             style="inset: 0px 0px -1px; border-radius: 0px 0px 8px 8px; border-top-color: var(--iw-ihca); border-right-color: var(--iw-ihca); border-bottom-color: var(--iw-ihca); border-left-color: var(--iw-ihca); border-width: 1px; z-index: 0;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="_b0398r">
+                                                <div class="_pxnjg" id="email-signup__names-field-help-text">정부 발급 신분증에 표시된 이름과 일치하는지 확인하세요.</div>
+                                            </div>
+                                            <div class="_klarpw errmsg2"></div>
+                                            <div class="_vp4g0q">
+                                                <div class="cx1v2qp dir dir-ltr" style="border-radius: 8px;">
+                                                    <div class="_jro6t0">
+                                                        <div class="_e296pg" style="flex: 1 1 0%;">
+                                                            <div class="_sbmagf"
+                                                                 style="background: none; border-radius: 8px; inset: 0px 0px -1px;"></div>
+                                                            <div class="_tddesd"><label class="_1yw7hpv" for="email-signup-date">
+                                                                <div class="_1m2ich98">
+                                                                    <div class="_11hx67x">생년월일</div>
+                                                                </div>
+                                                                <div dir="ltr">
+                                                                    <div class="_js9i23"><input aria-required="true" max="2022-07-16" class="_yrzsibu"
+                                                                                                id="email-signup-date" autocomplete="off" type="date"
+                                                                                                aria-describedby="error-text" value=""></div>
+                                                                </div>
+                                                            </label></div>
+                                                            <div class="_t26glb"
+                                                                 style="inset: 0px 0px -1px; border-radius: 8px; border-top-color: var(--iw-ihca); border-right-color: var(--iw-ihca); border-bottom-color: var(--iw-ihca); border-left-color: var(--iw-ihca); border-width: 1px; z-index: 0;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_b0398r">
+                                                    <div class="_pxnjg" id="email-signup__birthdate-field-help-text">만 18세 이상의 성인만 회원으로 가입할 수 있습니다.
+                                                        생일은 에어비앤비의 다른 회원에게 공개되지 않습니다.</div>
+                                                </div>
+                                                <div class="_klarpw errmsg3"></div>
+                                            </div>
+                                            <div class="_vp4g0q">
+                                                <div>
+                                                    <div class="_1jj61m9"><label class="_1yw7hpv" for="email-signup-email">
+                                                        <div class="_1m2ich98">
+                                                            <div class="_11hx67x">이메일</div>
+                                                        </div>
+                                                        <div dir="ltr">
+                                                            <div class="_fywymp7"><input placeholder="이메일" name="email"
+                                                                                         data-testid="email-signup-email" class="_yrzsibu" id="email-signup-email"
+                                                                                         autocomplete="off" inputmode="email" type="email"
+                                                                                         aria-describedby="email-signup-email-InputField-help" value=""></div>
+                                                        </div>
+                                                    </label></div>
+                                                    <div class="_klarpw">
+                                                        <div class="_pxnjg" id="email-signup-email-InputField-help"
+                                                             data-testid="email-signup-email-InputField-help">예약 확인과 영수증을 이메일로 보내드립니다.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="_vp4g0q">
+                                                <div>
+                                                    <div class="_1jj61m9"><label class="_1yw7hpv" for="email-signup-password">
+                                                        <div class="_1m2ich98">
+                                                            <div class="_11hx67x">비밀번호</div>
+                                                        </div>
+                                                        <div dir="ltr">
+                                                            <div class="_js9i23"><input name="memPw" placeholder="비밀번호" autocapitalize="none"
+                                                                                        spellcheck="false" data-testid="email-signup-password" class="_yrzsibu"
+                                                                                        id="email-signup-password" autocomplete="off" type="password"
+                                                                                        aria-describedby="email-signup-password-InputField-help" value=""></div>
+                                                        </div>
+                                                    </label>
+                                                        <div class="_129y4gf">
+                                                            <div class="_slm4k1"><button type="button" class="_15rpys7s">표시</button></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <di v data-testid="password-rules-indicator" class="_klarpw errmsg4" aria-live="polite" aria-atomic="true">
+                                                    <div class="_1u9fru1">
+
+                                                    </div>
+                                                    <div class="_1u9fru1">
+
+                                                        <div class="_13oxp5dz">
+                                                            <div class="_5kaapu">
+                                                                <div class="_14tkmhr"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                                                                           aria-label="규칙이 통과되지 않았습니다" role="img" focusable="false"
+                                                                                           style="display: block; height: 10px; width: 10px; fill: currentcolor;">
+                                                                    <path
+                                                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm3 4L8 7 5 4 4 5l3 3-3 3 1 1 3-3 3 3 1-1-3-3 3-3-1-1z">
+                                                                    </path>
+                                                                </svg></div>최소 8자 ~ 20자
+                                                            </div>
+                                                        </div>
+                                                        <div class="_13oxp5dz">
+                                                            <div class="_5kaapu">
+                                                                <div class="_14tkmhr"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                                                                           aria-label="규칙이 통과되지 않았습니다" role="img" focusable="false"
+                                                                                           style="display: block; height: 10px; width: 10px; fill: currentcolor;">
+                                                                    <path
+                                                                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm3 4L8 7 5 4 4 5l3 3-3 3 1 1 3-3 3 3 1-1-3-3 3-3-1-1z">
+                                                                    </path>
+                                                                </svg></div> 영어, 숫자, 기호를 1개이상 포함하세요
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <div id="airlock-inline-container" aria-live="polite"></div>
+                                            <div class="_1wzgqhq"></div>
+                                            <div><input type="hidden" name="email-signupuser_profile_info[collection_of_personal_information]"
+                                                        value="0">
+                                                <div class="_ovcpis">
+                                                    <div id="email-signupuser_profile_info[collection_of_personal_information]"
+                                                         aria-disabled="false" role="group"
+                                                         aria-labelledby="email-signupuser_profile_info[collection_of_personal_information]-row-title"
+                                                         class="r1pyaok7 u6t9k07 dir dir-ltr"><label
+                                                            for="email-signupuser_profile_info-row-checkbox"
+                                                            class="_13xlah4" >
+                                                        <div class="_jro6t0">
+                                                            <div class="_gfomxi">
+                                                                <div id="email-signupuser_profile_info[collection_of_personal_information]-row-title"
+                                                                     class="_gw4xx4">
+                                                                    <div class="_1v065jr">개인정보 수집 및 이용에 동의합니다.</div>
+                                                                    <div class="_owkz1m">1. 에어비앤비가 수집하는 개인 정보
+                                                                        에어비앤비 플랫폼을 이용하는 데 필요한 정보
+                                                                        당사는 회원님이 에어비앤비 플랫폼을 이용할 때 회원님의 개인 정보를 수집합니다. 그렇지 않은 경우, 에어비앤비는 요청하신 서비스를 회원님께 제공하지
+                                                                        못할 수 있습니다. 이러한 정보에는 다음이 포함됩니다.</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_1mqc21n"><span class="_10ndlvp"><input
+                                                                    name="email-signupuser_profile_info-row-checkbox"
+                                                                    aria-labelledby="email-signupuser_profile_info-row-checkbox"
+                                                                    id="email-signupuser_profile_info-row-checkbox" value="N"
+                                                                    class="_1yf4i4f" type="checkbox"><span class="_41yoza"
+                                                                                                           data-checkbox="true"></span></span></div>
+                                                        </div>
+                                                    </label></div>
+                                                </div><button type="button" class="_za4ekfm"><span class="_1jiyo28">더 보기</span></button>
+                                            </div>
+                                            <div class="_klarpw errmsg5"></div>
+                                            <div><input type="hidden" name="email-signupuser_profile_info[receive_promotional_email]" id="email-signupuser_profile_info[receive_promotional_email]hidden" value="0">
+                                                <div class="_ovcpis">
+                                                    <div id="email-signupuser_profile_info[receive_promotional_email]" aria-disabled="false"
+                                                         role="group"
+                                                         aria-labelledby="email-signupuser_profile_info[receive_promotional_email]-row-title"
+                                                         class="r1pyaok7 u6t9k07 dir dir-ltr"><label
+                                                            for="email-signupuser_sub-row-checkbox"
+                                                            class="_13xlah4">
+                                                        <div class="_jro6t0">
+                                                            <div class="_gfomxi">
+                                                                <div id="email-signupuser_profile_info[receive_promotional_email]-row-title"
+                                                                     class="_gw4xx4">
+                                                                    <div class="_1v065jr">마케팅 이메일 수신을 원합니다(선택).</div>
+                                                                    <div class="_owkz1m">에어비앤비 회원 전용 할인, 추천 여행 정보, 마케팅 이메일, 푸시 알림을 보내드립니다. 계정 설정 또는 마케팅
+                                                                        알림에서 언제든지 수신을 거부할 수
+                                                                        있습니다.</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_1mqc21n"><span class="_10ndlvp"><input
+                                                                    name="email-signupuser_sub-row-checkbox"
+                                                                    aria-labelledby="email-signupuser_sub-row-title"
+                                                                    id="email-signupuser_sub-row-checkbox"
+                                                                    class="_1yf4i4f" value="N" type="checkbox"><span class="_41yoza"
+                                                                                                           data-checkbox="true"></span></span></div>
+                                                        </div>
+                                                    </label></div>
+                                                </div><button type="button" class="_za4ekfm"><span class="_1jiyo28">더 보기</span></button>
+                                            </div>
+                                            <div class="_1wzgqhq"></div>동의 및 계속하기를 선택하여 에어비앤비 <a target="_blank" href="/terms?source=tos"
+                                                                                                 class="_xa1n8j9">서비스
+                                                약관</a>, <a target="_blank" href="/terms/payments_terms?source=tos" class="_xa1n8j9">결제 서비스 약관</a>,
+                                            <a target="_blank" href="/terms/location" class="_xa1n8j9">위치기반서비스 이용약관</a>, <a target="_blank"
+                                                                                                                            href="/terms/nondiscrimination_policy?source=tos" class="_xa1n8j9">차별 금지 정책</a>, <a
+                                                    target="_blank" href="/terms/privacy_policy?source=tos" class="_xa1n8j9">개인정보 처리방침</a>에 동의합니다.<div
+                                                    class="_vp4g0q"><button data-testid="signup-login-submit-btn" type="submit" class="_6hkhatt"
+                                                                            data-veloute="submit-btn-cypress"><span class="_jxxpcd"><span class="_kaq6tx"
+                                                                                                                                          style="background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%);"></span></span><span
+                                                    class="_tcp689">동의 및 계속하기 </span></button></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                </div>
+            </div>
+        </section>
+        <iframe id="iframe1" name="iframe1" style="display:none"></iframe>
+        <div class="_b21f4g">
+            <div aria-live="polite" aria-atomic="true"></div>
+            <div aria-live="assertive" aria-atomic="true"></div>
+        </div>
+    </div>
+    <!-- 비밀번호 입력 -->
+    <div dir="ltr" class="login_pw" hidden>
+        <div class="_1t0jy5tw"></div>
+        <section>
+            <div class="_vxvq8x" data-testid="modal-container">
+                <div class="_z4lmgp">
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                    <div class="_z4lmgp">
+                        <div role="dialog" aria-label="로그인" aria-modal="true" class="_1ucy1zjv" style="position: relative;">
+                            <div class="_pa35zs backmain"><button aria-label="닫기" type="button"
+                                                         class="atm_26_1j28jx2 atm_1s_glywfm atm_9s_1o8liyq atm_5j_1ssbidh atm_3f_glywfm atm_kd_glywfm atm_gi_idpfg4 atm_l8_idpfg4 atm_7l_18pqv07 atm_9j_tlke0l atm_tl_1gw4zv3 atm_nvh0zw_glywfm atm_10xqkau_glywfm atm_6sivc_idpfg4 atm_1t4m47o_idpfg4 atm_so7p3s_glywfm atm_x9r51u_glywfm atm_e0aj52_glywfm atm_1b7jadx_ryfd4z atm_wa0l67_glywfm atm_z8v79x_glywfm atm_57992z_glywfm atm_1fi7hcc_idpfg4 atm_1bpl3k1_idpfg4 atm_kwr3fs_glywfm atm_1vbw7mi_glywfm atm_iqrf8d_glywfm atm_1k7j3g0_ryfd4z atm_k7s5ow_glywfm atm_1jhk75u_1piyxwk atm_174zlj6_13gfvf7 atm_1yfe54e_161hw1 atm_mk_h2mmj6 atm_uc_bm6tyn atm_5zlr7v_glywfm atm_1i1170i_1otlplk atm_1qc5akx_1nh1gcj atm_16scgop_1otlplk atm_1xc0vp4_ffmgpj atm_1hgxuhp_1nh1gcj atm_w8nnxc_glywfm atm_6hovrv_idpfg4 atm_178mhn2_idpfg4 atm_1heevni_glywfm atm_1s33t4_glywfm atm_5a8a1f_1lyxhpa atm_1o6jmyj_1nh1gcj atm_k8iwno_1lyxhpa atm_yt2vh9_1nh1gcj atm_1nw6de5_1j28jx2 atm_lzn0r3_1yyfdc7 atm_du7p7_1ulexfb atm_6hjprp_stnw88 atm_2stpi8_1ssbidh atm_44hr8e_1ssbidh atm_69el5p_1ooetej atm_1v8yup7_1vi7ecw atm_1oletfx_1vi7ecw atm_jxpu17_1ssbidh l1j9v1wn dir dir-ltr"><span
+                                    class="atm_mk_h2mmj6 dir dir-ltr"><svg viewBox="0 0 32 32"
+                                                                           xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                                           focusable="false"
+                                                                           style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                        <g fill="none">
+                                            <path
+                                                    d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932">
+                                            </path>
+                                        </g>
+                                    </svg></span></button></div>
+                            <header class="_1youxq0">
+                                <div class="_1tng6ym"></div>
+                                <div class="_9t7ktw">
+                                    <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                        <div class="_1q9sh65">로그인</div>
+                                    </h1>
+                                </div>
+                                <div class="_rrmdgl"></div>
+                            </header>
+                            <div class="_12kfhdn">
+                                <div data-testid="login-pane">
+                                    <div class="_1mgee70">
+                                        <form method="POST" action="/pages/login" novalidate="" data-testid="auth-form">
+                                            <input type="hidden" name="authenticity_token"
+                                                   value="V4$.airbnb.co.kr$VfAPxJTKmQM$h11Bq3dfJcJZIqGevY_Oo3YEEG70cXDHYr-YTlsjLRA="><input
+                                                type="hidden" name="from" value="email_login"><input type="hidden"
+                                                                                                     name="airlock_id" value="">
+                                                        <div>
+                                                            <div class="_1jj61m9"><label class="_1yw7hpv" for="email-login-email">
+                                                                <div class="_1m2ich98">
+                                                                    <div class="_11hx67x">비밀번호</div>
+                                                                </div>
+                                                                <div dir="ltr">
+                                                                    <div class="_js9i23">
+                                                                        <input placeholder="비밀번호" name="memPw" data-testid="email-login-email" aria-required="true" class="_yrzsibu" id="email-login-password" autocomplete="off" type="password" aria-describedby="email-login-email-InputField-help" value="" required="">
+                                                                        <input type="text" name="email" id="sendemails" value="" hidden>
+                                                                    </div>
+                                                    </div>
+                                                </label>
+                                                    <div class="_129y4gf">
+                                                        <div class="_slm4k1">
+                                                            <button type="button" class="atm_26_1j28jx2 atm_c8_1kw7nm4 atm_bx_1kw7nm4 atm_cs_qo5vgd atm_cd_1kw7nm4 atm_ci_1kw7nm4 atm_g3_1kw7nm4 atm_7l_18pqv07 atm_rd_8stvzk atm_48epfq_tlke0l atm_1i1170i_1otlplk atm_1q87l6g_8stvzk atm_9i92u8_1kw7nm4 atm_1jnz9t4_8stvzk atm_1s_glywfm atm_3f_glywfm atm_9j_tlke0l atm_gi_idpfg4 atm_l8_idpfg4 atm_vb_1wugsn5 atm_174zlj6_13gfvf7 atm_u2zm4s_glywfm atm_5j_mlmjl2 atm_r3_1kw7nm4 atm_i13gxs_18pqv07 atm_1qoa45s_8stvzk atm_16scgop_12u4tyr atm_1x17suq_8stvzk atm_kd_glywfm atm_w8nnxc_glywfm atm_6hovrv_idpfg4 atm_178mhn2_idpfg4 atm_1heevni_glywfm atm_1s33t4_glywfm atm_1ceipv4_18pqv07 atm_173kp0v_8stvzk atm_e0aj52_glywfm atm_1b7jadx_ryfd4z atm_wa0l67_1364l2v atm_u0uin_18pqv07 atm_abvsi8_8stvzk atm_iqrf8d_glywfm atm_1k7j3g0_ryfd4z atm_k7s5ow_1364l2v atm_1yfe54e_161hw1 atm_13103ow_8stvzk atm_11ocau6_8stvzk l1j9v1wn dir dir-ltr" id="togPw" >표시</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="" aria-live="polite"></div>
+                                            <div class="_wfo3ii"><button data-testid="signup-login-submit-btn" type="submit"
+                                                                         class="atm_26_2a2bt1 atm_9j_tlke0l atm_9s_1o8liyq atm_gi_idpfg4 atm_mk_h2mmj6 atm_r3_1h6ojuz atm_rd_glywfm atm_3f_glywfm atm_vy_1osqo2v atm_l8_srw7uq atm_7l_1hbpp16 atm_c8_8ycq01 atm_bx_1ltc5j7 atm_tl_1gw4zv3 atm_174zlj6_13gfvf7 atm_1jhk75u_kb7nvz atm_g3_adnk3f atm_cs_qo5vgd atm_5j_9l7fl4 atm_kd_glywfm atm_uc_ouvu0h atm_5zlr7v_glywfm atm_r2_1j28jx2 atm_nvh0zw_glywfm atm_10xqkau_glywfm atm_6sivc_idpfg4 atm_1t4m47o_idpfg4 atm_so7p3s_glywfm atm_x9r51u_glywfm atm_e0aj52_glywfm atm_1b7jadx_ryfd4z atm_wa0l67_tz30h1 atm_z8v79x_glywfm atm_57992z_glywfm atm_1fi7hcc_idpfg4 atm_1bpl3k1_idpfg4 atm_kwr3fs_glywfm atm_1vbw7mi_glywfm atm_iqrf8d_glywfm atm_1k7j3g0_ryfd4z atm_k7s5ow_tz30h1 atm_1xc0vp4_18md41p atm_s7wuve_glywfm atm_wolyye_2a2bt1 atm_1i1170i_1hbpp16 atm_1j4gqi5_glywfm atm_1kevezh_1wg69w8 atm_16scgop_1hbpp16 atm_1f0kgtv_glywfm atm_oln6rx_161hw1 atm_1yfe54e_1hbpp16 atm_1kkdsga_161hw1 l1j9v1wn dir dir-ltr"
+                                                                         data-veloute="submit-btn-cypress"><span
+                                                    class="atm_mk_stnw88 atm_tk_idpfg4 atm_fq_idpfg4 atm_n3_idpfg4 atm_6i_idpfg4 atm_vy_1osqo2v atm_e2_1osqo2v atm_ks_15vqwwr atm_ib_ueyaub atm_ia_ueyaub atm_5j_9l7fl4 dir dir-ltr"><span
+                                                    class="atm_9s_1ulexfb atm_vy_1osqo2v atm_e2_1osqo2v atm_jb_uuw12j atm_2w_1egmwxu atm_k4_idpfg4 atm_uc_kn5pbq atm_2g_x6ffn1 atm_1k1pljo_kb7nvz atm_f8cor4_1cydtq5 atm_1jmsv9c_idpfg4 atm_1xc0vp4_kftzq4 dir dir-ltr"
+                                                    style="background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%); --mouse-x:48.8462; --mouse-y:10.4329;"></span></span><span
+                                                    class="atm_9s_1ulexfb atm_mk_h2mmj6 atm_mj_glywfm dir dir-ltr">로그인
+                                                </span></button></div><button data-testid="forgot-password-link"잊
+                                                                              id="checkEmail"
+                                                                              type="button"
+                                                                              class="atm_26_1j28jx2 atm_c8_1kw7nm4 atm_bx_1kw7nm4 atm_cs_qo5vgd atm_cd_1kw7nm4 atm_ci_1kw7nm4 atm_g3_1kw7nm4 atm_7l_18pqv07 atm_rd_8stvzk atm_48epfq_tlke0l atm_1i1170i_1otlplk atm_1q87l6g_8stvzk atm_9i92u8_1kw7nm4 atm_1jnz9t4_8stvzk atm_1s_glywfm atm_3f_glywfm atm_9j_tlke0l atm_gi_idpfg4 atm_l8_idpfg4 atm_vb_1wugsn5 atm_174zlj6_13gfvf7 atm_u2zm4s_glywfm atm_5j_mlmjl2 atm_r3_1kw7nm4 atm_i13gxs_18pqv07 atm_1qoa45s_8stvzk atm_16scgop_12u4tyr atm_1x17suq_8stvzk atm_kd_glywfm atm_w8nnxc_glywfm atm_6hovrv_idpfg4 atm_178mhn2_idpfg4 atm_1heevni_glywfm atm_1s33t4_glywfm atm_1ceipv4_18pqv07 atm_173kp0v_8stvzk atm_e0aj52_glywfm atm_1b7jadx_ryfd4z atm_wa0l67_1364l2v atm_u0uin_18pqv07 atm_abvsi8_8stvzk atm_iqrf8d_glywfm atm_1k7j3g0_ryfd4z atm_k7s5ow_1364l2v atm_1yfe54e_161hw1 atm_13103ow_8stvzk atm_11ocau6_8stvzk l1j9v1wn dir dir-ltr">비밀번호를
+                                            잊으셨나요?</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                </div>
+            </div>
+        </section>
+        <div class="_b21f4g">
+            <div aria-live="polite" aria-atomic="true"></div>
+            <div aria-live="assertive" aria-atomic="true"></div>
+        </div>
+    </div>
+    <!-- 비밀번호 입력 -->
+</div>
+</html>

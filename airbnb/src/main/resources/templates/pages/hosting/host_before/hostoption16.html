@@ -1,0 +1,253 @@
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/" data-is-hyperloop="true" data-hyperloop-version="1" dir="ltr" class="js-focus-visible" style="--vh:9.75px; --vw:19.2px; --vw-unitless:1920; --vw-px:1920px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        .gm-control-active>img {
+          box-sizing: content-box;
+          display: none;
+          left: 50%;
+          pointer-events: none;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%)
+        }
+
+        .gm-control-active>img:nth-child(1) {
+          display: block
+        }
+
+        .gm-control-active:hover>img:nth-child(1),
+        .gm-control-active:active>img:nth-child(1),
+        .gm-control-active:disabled>img:nth-child(1) {
+          display: none
+        }
+
+        .gm-control-active:hover>img:nth-child(2) {
+          display: block
+        }
+
+        .gm-control-active:active>img:nth-child(3) {
+          display: block
+        }
+
+        .gm-control-active:disabled>img:nth-child(4) {
+          display: block
+        }
+    </style>
+    <style>
+        .gm-ui-hover-effect {
+          opacity: .6
+        }
+
+        .gm-ui-hover-effect:hover {
+          opacity: 1
+        }
+
+        .gm-ui-hover-effect>span {
+          background-color: #000
+        }
+
+        @media(forced-colors:active),
+        (prefers-contrast:more) {
+          .gm-ui-hover-effect>span {
+            background-color: ButtonText
+          }
+        }
+    </style>
+    <style>
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-cc button,
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-mtc div {
+          font-size: 10px;
+          box-sizing: border-box
+        }
+
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-cc button,
+        .gm-style .gm-style-cc span {
+          outline-offset: 3px
+        }
+    </style>
+    <style>
+        @media print {
+
+          .gm-style .gmnoprint,
+          .gmnoprint {
+            display: none
+          }
+        }
+
+        @media screen {
+
+          .gm-style .gmnoscreen,
+          .gmnoscreen {
+            display: none
+          }
+        }
+    </style>
+    <style>
+        .gm-style-moc {
+          background-color: rgba(0, 0, 0, 0.45);
+          pointer-events: none;
+          text-align: center;
+          transition: opacity ease-in-out
+        }
+
+        .gm-style-mot {
+          color: white;
+          font-family: Roboto, Arial, sans-serif;
+          font-size: 22px;
+          margin: 0;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%)
+        }
+    </style>
+    <style>
+        .gm-style img {
+          max-width: none;
+        }
+
+        .gm-style {
+          font: 400 11px Roboto, Arial, sans-serif;
+          text-decoration: none;
+        }
+    </style>
+    <link href="https://a0.muscache.com/airbnb/static/packages/dls/dls-lite_cereal-32f4a55b7a0ed9ca55714ba7265a6c84.css" rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
+    <title>호스트가 되신 것을 환영합니다 - 에어비앤비</title>
+    <link rel="stylesheet" href="/lib/css/hostoption16.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body class="with-new-header">
+    <div th:fragment="hostoption15(id)" hidden>
+        <div id="iddiv2" th:text="${id}" hidden></div>
+    </div>
+    <div id="site-skip-links">
+        <span id="popups-everywhere-skip-link"></span>
+    </div>
+    <div id="smart-banner"></div>
+    <noscript>
+        <div class="alert alert-with-icon alert-error no-js-alert" data-nosnippet="true">
+            <i class="icon alert-icon icon-alert-alt"></i>죄송합니다. 에어비앤비 웹사이트의 일부는 자바스크립트가 활성화되어 있지 않으면 제대로 작동하지 않습니다.
+        </div>
+    </noscript>
+    <div id="flash-container" class="flash-container" role="alert" aria-live="assertive"></div>
+    <div id="education-overlay-root"></div>
+    <div data-application="true">
+        <div dir="ltr">
+            <div data-theme="" class="t1bgcr6e ">
+                <div>
+                    <div class="_15fljio"></div>
+                    <main class="_fmgjts">
+                        <div class="_1b9ixxkj" aria-hidden="false">
+                            <div class="_kp9zti">
+                                <a aria-label="에어비앤비 홈페이지" href="/pages" class="_1y540ni">
+                                    <span class="_e296pg">
+                                        <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; height: 32px; width: 32px; fill: white;">
+                                            <path d="M16 1c2.008 0 3.463.963 4.751 3.269l.533 1.025c1.954 3.83 6.114 12.54 7.1 14.836l.145.353c.667 1.591.91 2.472.96 3.396l.01.415.001.228c0 4.062-2.877 6.478-6.357 6.478-2.224 0-4.556-1.258-6.709-3.386l-.257-.26-.172-.179h-.011l-.176.185c-2.044 2.1-4.267 3.42-6.414 3.615l-.28.019-.267.006C5.377 31 2.5 28.584 2.5 24.522l.005-.469c.026-.928.23-1.768.83-3.244l.216-.524c.966-2.298 6.083-12.989 7.707-16.034C12.537 1.963 13.992 1 16 1zm0 2c-1.239 0-2.053.539-2.987 2.21l-.523 1.008c-1.926 3.776-6.06 12.43-7.031 14.692l-.345.836c-.427 1.071-.573 1.655-.605 2.24l-.009.33v.206C4.5 27.395 6.411 29 8.857 29c1.773 0 3.87-1.236 5.831-3.354-2.295-2.938-3.855-6.45-3.855-8.91 0-2.913 1.933-5.386 5.178-5.42 3.223.034 5.156 2.507 5.156 5.42 0 2.456-1.555 5.96-3.855 8.907C19.277 27.766 21.37 29 23.142 29c2.447 0 4.358-1.605 4.358-4.478l-.004-.411c-.019-.672-.17-1.296-.714-2.62l-.248-.6c-1.065-2.478-5.993-12.768-7.538-15.664C18.053 3.539 17.24 3 16 3zm.01 10.316c-2.01.021-3.177 1.514-3.177 3.42 0 1.797 1.18 4.58 2.955 7.044l.21.287.174-.234c1.73-2.385 2.898-5.066 2.989-6.875l.006-.221c0-1.906-1.167-3.4-3.156-3.421h-.001z"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="_1n1ozna">
+                                <div class="_1h6n1zu" role="img" aria-busy="false" aria-label="네이비색 티셔츠를 입은 에어비앤비의 브라이언 체스키 CEO가 골든레트리버 반려견과 함께 카메라를 보며 미소 짓고 있습니다." style="display: inline-block; vertical-align: bottom; height: 100%; width: 100%; min-height: 1px;">
+                                    <picture>
+                                        <source srcset="https://a0.muscache.com/im/pictures/a42e2ba3-9beb-46b0-8a1e-4edd167edeb1.jpg?im_w=320 1x, https://a0.muscache.com/im/pictures/a42e2ba3-9beb-46b0-8a1e-4edd167edeb1.jpg?im_w=720 2x" media="(max-width: 743px)">
+                                        <source srcset="https://a0.muscache.com/im/pictures/a42e2ba3-9beb-46b0-8a1e-4edd167edeb1.jpg?im_w=720 1x, https://a0.muscache.com/im/pictures/a42e2ba3-9beb-46b0-8a1e-4edd167edeb1.jpg?im_w=1440 2x" media="(min-width: 743.1px) and (max-width: 1127px)">
+                                        <source srcset="https://a0.muscache.com/im/pictures/a42e2ba3-9beb-46b0-8a1e-4edd167edeb1.jpg?im_w=480 1x, https://a0.muscache.com/im/pictures/a42e2ba3-9beb-46b0-8a1e-4edd167edeb1.jpg?im_w=1200 2x" media="(min-width: 1127.1px) and (max-width: 1439px)">
+                                        <source srcset="https://a0.muscache.com/im/pictures/a42e2ba3-9beb-46b0-8a1e-4edd167edeb1.jpg?im_w=720 1x, https://a0.muscache.com/im/pictures/a42e2ba3-9beb-46b0-8a1e-4edd167edeb1.jpg?im_w=1680 2x" media="(min-width: 1439.1px)"><img class="_6tbg2q" aria-hidden="true" alt="네이비색 티셔츠를 입은 에어비앤비의 브라이언 체스키 CEO가 골든레트리버 반려견과 함께 카메라를 보며 미소 짓고 있습니다." elementtiming="LCP-target" loading="lazy" src="/lib/images/a42e2ba3-9beb-46b0-8a1e-4edd167edeb1.jpg" data-original-uri="https://a0.muscache.com/pictures/a42e2ba3-9beb-46b0-8a1e-4edd167edeb1.jpg" style="object-fit: cover; vertical-align: bottom;">
+                                    </picture>
+                                    <div class="_15p4g025" style="background-image: url(&quot;https://a0.muscache.com/im/pictures/a42e2ba3-9beb-46b0-8a1e-4edd167edeb1.jpg?im_w=720&quot;); background-size: cover;"></div>
+                                </div>
+                                <div class="_1cu340vw"></div>
+                                <div class="_xyhqsk">
+                                    <div class="_1itpe9r">
+                                        <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 52px; width: 78px; min-height: 1px;">
+                                            <img class="_9ofhsl" aria-hidden="true" alt="" elementtiming="LCP-target" loading="lazy" src="/lib/images/03077a3c-d04f-4136-999f-9b579772597d.jpg" data-original-uri="https://a0.muscache.com/pictures/03077a3c-d04f-4136-999f-9b579772597d.jpg" style="object-fit: cover; vertical-align: bottom;">
+                                            <div class="_15p4g025" style="background-image: url(&quot;https://a0.muscache.com/pictures/03077a3c-d04f-4136-999f-9b579772597d.jpg&quot;); background-size: cover;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="_1410shj" tabindex="-1">
+                                        <span class="ll4r2nl dir dir-ltr">에어비앤비 CEO 브라이언 체스키</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_gqn5ll" aria-hidden="false">
+                            <div class="_1l7bhkmt">
+                                <div class="_fwc96">
+                                    <div class="_88xxct">
+                                        <button class="_1cy1mvx" type="button" onclick="location.href='/pages'">
+                                            <div class="_66qnx8">
+                                                <div>나가기</div>
+                                                <span aria-hidden="true" class="_1g2aycaq">나가기</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_13p4hde6">
+                            <div class="_14lxf1rd">
+                                <div class="_112azfv">
+                                    <div class="_tdjw9nc" style="transition:opacity 0.6s">
+                                        <div class="_10mqyec">
+                                            <span style="font-size:0"></span>
+                                            <div class="_118xr10" id="FMP-target">
+                                                <div id="memName" class="_e5xjym4">
+                                                    <!--사용자이름이 들어간 환영 문구-->
+                                                    <h1 class="_gw2yyp">{{memFirstname}}님, 반갑습니다!</h1>
+                                                    <div class="_1rbt0oa">
+                                                        <span class="ll4r2nl dir dir-ltr">호스트는 에어비앤비의 중심이라 할 수 있습니다. 이제 호스팅의
+                                                            매력을 경험해 보세요.<br>
+                                                            <br><span class="_1di55y9">- 브라이언 드림</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_1px78l2">
+                                <div class="_uoqa0tf">
+                                    <div class="_1pblb3vf">
+                                        <div class="_dt53i0">
+                                            <button location="[object Object]" match="[object Object]" type="button" class="_cd8zo4d" onclick="location.href='/pages'">
+                                                <span class="_jxxpcd">
+                                                    <span class="_kaq6tx" style="background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%);"></span>
+                                                </span>
+                                                <span class="_tcp689">다음
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <div class="_b21f4g">
+                    <div aria-live="polite" aria-atomic="true"></div>
+                    <div aria-live="assertive" aria-atomic="true"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #fb_xdm_frame_https {
+          visibility: hidden
+        }
+    </style>
+    <div id="fb-root"></div>
+    <div id="authModals"></div>
+</body>
+<script src="/lib/js/hostoption16.js"></script>
+
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/" data-is-hyperloop="true" data-hyperloop-version="1" class="scrollbar-gutter js-focus-visible" dir="ltr" style="--vh:9.12px; --vw:8.37px; --vw-unitless:837; --vw-px:837px;">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="/lib/css/travel.css">
+<link rel="stylesheet" href="/lib/css/loginpop.css">
+<link rel="stylesheet" href="/lib/css/acc_header.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link href="https://a0.muscache.com/airbnb/static/packages/dls/dls-lite_cereal-32f4a55b7a0ed9ca55714ba7265a6c84.css" rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
+<title>여행 목록 - 에어비앤비</title>
+
+</html>
+</head>
+
+<body class="with-new-header">
+    <div id="site-skip-links">
+        <span id="popups-everywhere-skip-link"></span>
+    </div>
+    <div id="smart-banner"></div>
+    <noscript>
+        <div class="alert alert-with-icon alert-error no-js-alert" data-nosnippet="true">
+            <i class="icon alert-icon icon-alert-alt"></i>죄송합니다. 에어비앤비 웹사이트의 일부는 자바스크립트가 활성화되어 있지 않으면 제대로 작동하지 않습니다.
+        </div>
+    </noscript>
+    <div id="flash-container" class="flash-container" role="alert" aria-live="assertive"></div>
+    <div id="education-overlay-root"></div>
+    <div data-application="true">
+        <div dir="ltr">
+            <div data-theme="" class="t1bgcr6e ">
+                <div>
+                    <div>
+                        <div style="--view-to-view-transition-element-opacity:0;--view-to-view-transition-element-visibility:hidden">
+                            <div style="--page-shell-max-content-width:1600px">
+                                <div class="_16grqhk" th:fragment="account(id)">
+                                    <div th:fragment="account(id)">
+                                        <div id="iddiv" th:text="${id}" hidden></div>
+                                    </div>
+                                    <!--acc_header nav-->
+                                    <div th:replace="fragment/acc_header::acc_header"></div>
+                                    <!--acc_header nav-->
+                                    <main id="site-content">
+                                        <div class="_88xxct">
+                                            <div class="c1yo0219 dir dir-ltr">
+                                                <div style="--gp-section-max-width:1440px">
+                                                    <div class="_le6wlg">
+                                                        <div style="--maxWidth:1120px" class="plmw1e5 mq5rv0q dir dir-ltr">
+                                                            <div data-plugin-in-point-id="UPCOMING_TRIPS_HEADING" data-section-id="UPCOMING_TRIPS_HEADING" style="padding-top:36px;padding-bottom:24px">
+                                                                <h2 data-shared-element-id="page-marquee" class="h1i0omnt dir dir-ltr">
+                                                                    <span class="_151wof4v" style="--tl-color:#222222;--tl-font-size:32px;--tl-font-weight:600;--tl-line-clamp:1;--tl-line-height:36px">여행</span>
+                                                                </h2>
+                                                                <span id="FMP-target"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 중간 값 -->
+                                            <div class="_npr0qi" style="border-top-color:#DDDDDD"></div>
+                                            <div id="loadingpage"></div>
+                                            <!-- 중간 값 -->
+                                            <div class="c1yo0219 dir dir-ltr">
+                                                <div style="--gp-section-max-width:1440px">
+                                                    <div class="_le6wlg">
+                                                        <div style="--maxWidth:1120px" class="plmw1e5 mq5rv0q dir dir-ltr">
+                                                            <div class="_npr0qi" style="border-top-color:#DDDDDD"></div>
+                                                            <div data-plugin-in-point-id="HELP_CENTER_LINK_ROW" data-section-id="HELP_CENTER_LINK_ROW" style="padding-top:24px;padding-bottom:36px">
+                                                                <div>
+                                                                    <span class="t1wc0j5d dir dir-ltr">
+                                                                        <span class="_y9cbsa" style="--tl-color:#222222;--tl-font-size:14px;--tl-font-weight:400;--tl-line-height:18px">예약
+                                                                            내역을 찾으실 수 없나요?</span>
+                                                                    </span>
+                                                                    <span data-testid="help-action" class="b1kpyyrv dir dir-ltr">
+                                                                        <a aria-label="도움말 센터 방문하기" href="/help?audience=guest" class="_1sikdxcl">도움말 센터 방문하기</a>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </main>
+                                </div>
+                                <!--footer-->
+                                <div th:replace="/fragment/footer"></div>
+                                <!--footer-->
+                            </div>
+                            <div class="t2pjd0h dir dir-ltr">
+                                <div class="t6qlz27 dir dir-ltr" data-testid="Incoming"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_b21f4g">
+                    <div aria-live="polite" aria-atomic="true"></div>
+                    <div aria-live="assertive" aria-atomic="true"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fb-root"></div>
+    <div id="authModals"></div>
+    <!-- 로그인 이메일 입력 -->
+    <div th:replace="/fragment/login_popup::login_popup"></div>
+    <!-- 로그인 새로운 아이디 입력시 회원가입-->
+</body>
+<script src="/lib/js/acc_loginpop.js"></script>
+<script src="/lib/js/travel.js"></script>
+
+</html>

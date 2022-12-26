@@ -1,0 +1,617 @@
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/" data-is-hyperloop="true" data-hyperloop-version="1" dir="ltr" class="js-focus-visible" style="--vh:9.75px; --vw:14.27px; --vw-unitless:1427; --vw-px:1427px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://a0.muscache.com/airbnb/static/packages/dls/dls-lite_cereal-32f4a55b7a0ed9ca55714ba7265a6c84.css" rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
+    <title>숙소 위치 입력 - 에어비앤비</title>
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="/lib/css/hostoption5.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body class="with-new-header">
+    <div th:fragment="hostoption3(id)" hidden>
+        <div id="iddiv" th:text="${lodgingId}" hidden></div>
+    </div>
+    <div id="site-skip-links">
+        <span id="popups-everywhere-skip-link"></span>
+    </div>
+    <div id="smart-banner"></div>
+    <noscript>
+        <div class="alert alert-with-icon alert-error no-js-alert" data-nosnippet="true">
+            <i class="icon alert-icon icon-alert-alt"></i>죄송합니다. 에어비앤비 웹사이트의 일부는 자바스크립트가 활성화되어 있지 않으면 제대로 작동하지 않습니다.
+        </div>
+    </noscript>
+    <div id="flash-container" class="flash-container" role="alert" aria-live="assertive"></div>
+    <div id="education-overlay-root"></div>
+    <div data-application="true">
+        <div dir="ltr">
+            <div data-theme="" class="t1bgcr6e ">
+                <div>
+                    <div class="_15fljio"></div>
+                    <main class="_fmgjts">
+                        <div class="_15c6744c" aria-hidden="false">
+                            <div class="_kp9zti">
+                                <a aria-label="에어비앤비 홈페이지" href="/pages" class="_1y540ni">
+                                    <span class="_e296pg">
+                                        <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;height:32px;width:32px;fill:white" aria-hidden="true" focusable="false">
+                                            <path d="M16 1c2.008 0 3.463.963 4.751 3.269l.533 1.025c1.954 3.83 6.114 12.54 7.1 14.836l.145.353c.667 1.591.91 2.472.96 3.396l.01.415.001.228c0 4.062-2.877 6.478-6.357 6.478-2.224 0-4.556-1.258-6.709-3.386l-.257-.26-.172-.179h-.011l-.176.185c-2.044 2.1-4.267 3.42-6.414 3.615l-.28.019-.267.006C5.377 31 2.5 28.584 2.5 24.522l.005-.469c.026-.928.23-1.768.83-3.244l.216-.524c.966-2.298 6.083-12.989 7.707-16.034C12.537 1.963 13.992 1 16 1zm0 2c-1.239 0-2.053.539-2.987 2.21l-.523 1.008c-1.926 3.776-6.06 12.43-7.031 14.692l-.345.836c-.427 1.071-.573 1.655-.605 2.24l-.009.33v.206C4.5 27.395 6.411 29 8.857 29c1.773 0 3.87-1.236 5.831-3.354-2.295-2.938-3.855-6.45-3.855-8.91 0-2.913 1.933-5.386 5.178-5.42 3.223.034 5.156 2.507 5.156 5.42 0 2.456-1.555 5.96-3.855 8.907C19.277 27.766 21.37 29 23.142 29c2.447 0 4.358-1.605 4.358-4.478l-.004-.411c-.019-.672-.17-1.296-.714-2.62l-.248-.6c-1.065-2.478-5.993-12.768-7.538-15.664C18.053 3.539 17.24 3 16 3zm.01 10.316c-2.01.021-3.177 1.514-3.177 3.42 0 1.797 1.18 4.58 2.955 7.044l.21.287.174-.234c1.73-2.385 2.898-5.066 2.989-6.875l.006-.221c0-1.906-1.167-3.4-3.156-3.421h-.001z"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="_1jp5a5ys">
+                                <h1 class="_hvpbea" tabindex="-1">숙소 위치는 어디인가요?</h1>
+                            </div>
+                        </div>
+                        <div class="_1nirz3pa" aria-hidden="false">
+                            <div class="_l6v72tr">
+                                <div class="_fwc96">
+                                    <div class="_5kaapu">
+                                        <div class="_1w3zdzk">
+                                            <button class="_51evlzk" type="button">
+                                                <span class="_ug8ljm" style="margin-left:-18px">
+                                                    <span class="_52l764" style="right:-18px;z-index:3">
+                                                        <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 22px; width: 22px; min-height: 1px; border-radius: 50%;">
+                                                            <img class="_9ofhsl" aria-hidden="true" alt="" decoding="async" elementtiming="LCP-target" fetchpriority="low" loading="lazy" src="/lib/images/c131fb36-f46a-464f-ad2f-087ebf88078d.jpg" data-original-uri="https://a0.muscache.com/im/pictures/c131fb36-f46a-464f-ad2f-087ebf88078d.jpg" style="object-fit: cover; vertical-align: bottom; border-radius: 50%;">
+                                                            <div class="_15p4g025" style="background-image: url(&quot;https://a0.muscache.com/im/pictures/c131fb36-f46a-464f-ad2f-087ebf88078d.jpg&quot;); background-size: cover; border-radius: 50%;"></div>
+                                                        </div>
+                                                    </span>
+                                                    <span class="_52l764" style="right:-9px;z-index:2">
+                                                        <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 22px; width: 22px; min-height: 1px; border-radius: 50%;">
+                                                            <img class="_9ofhsl" aria-hidden="true" alt="" decoding="async" elementtiming="LCP-target" fetchpriority="low" loading="lazy" src="/lib/images/3ddc6e92-e2fd-4cdc-a460-2f1d7d5365ae.jpg" data-original-uri="https://a0.muscache.com/im/pictures/3ddc6e92-e2fd-4cdc-a460-2f1d7d5365ae.jpg" style="object-fit: cover; vertical-align: bottom; border-radius: 50%;">
+                                                            <div class="_15p4g025" style="background-image: url(&quot;https://a0.muscache.com/im/pictures/3ddc6e92-e2fd-4cdc-a460-2f1d7d5365ae.jpg&quot;); background-size: cover; border-radius: 50%;"></div>
+                                                        </div>
+                                                    </span>
+                                                    <span class="_52l764" style="right:-0px;z-index:1">
+                                                        <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 22px; width: 22px; min-height: 1px; border-radius: 50%;">
+                                                            <img class="_9ofhsl" aria-hidden="true" alt="" decoding="async" elementtiming="LCP-target" fetchpriority="low" loading="lazy" src="/lib/images/ba6627db-1aa4-4f7f-9f18-5be3d3470037.jpg" data-original-uri="https://a0.muscache.com/im/pictures/ba6627db-1aa4-4f7f-9f18-5be3d3470037.jpg" style="object-fit: cover; vertical-align: bottom; border-radius: 50%;">
+                                                            <div class="_15p4g025" style="background-image: url(&quot;https://a0.muscache.com/im/pictures/ba6627db-1aa4-4f7f-9f18-5be3d3470037.jpg&quot;); background-size: cover; border-radius: 50%;"></div>
+                                                        </div>
+                                                    </span>
+                                                </span>슈퍼호스트에게 물어보기
+                                                       <!-- -->
+                                            </button>
+                                        </div>
+                                        <div class="_15q0efe">
+                                            <button aria-label="도움말" class="_1h4qizn" type="button" onclick="location.href='/pages/help'">
+                                                <div class="_tujr53">
+                                                    <div>도움말</div>
+                                                    <span aria-hidden="true" class="_dw82l6q">도움말</span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="_hzh8ju">
+                                            <button class="_1cy1mvx" type="button">
+                                                <div class="_66qnx8">
+                                                    <div>도움말</div>
+                                                    <span aria-hidden="true" class="_1g2aycaq">도움말</span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_fwc96">
+                                    <div class="_88xxct">
+                                        <button class="_1cy1mvx" type="button" onclick="location.href='/pages/'">
+                                            <div class="_66qnx8">
+                                                <div>저장 및 나가기</div>
+                                                <span aria-hidden="true" class="_1g2aycaq">저장 및 나가기</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_1uvm7u">
+                            <div class="_1dhc1ohq">
+                                <div class="_112azfv">
+                                    <div class="_tdjw9nc" style="transition:opacity 0.6s">
+                                        <div class="_10mqyec">
+                                            <span style="font-size:0"></span>
+                                            <div class="_1hcbun3" id="FMP-target">
+                                                <div class="_8ojzb1">
+                                                    <div class="_1pulvtcv" style="height: calc(100vh - 80px);" id="searchbar1">
+                                                        <div class="_1y61moct" id="searchbar2">
+                                                            <div class="_4ulxo9">
+                                                                <div style="height: 895px; width: 100%; position: relative;" id="googleMap"></div>
+                                                                <div class="_tr6gyg">
+                                                                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=??????&callback=myMap"></script>                                                                    <script>
+                                                                        function myMap() {
+                                                                            let seoul = { lat: 37.5642135 ,lng: 127.0016985 };
+                                                                            let map = new google.maps.Map(
+                                                                                document.getElementById('googleMap'), {
+                                                                                    zoom: 12,
+                                                                                    center: seoul,
+                                                                                    panControl: false,
+                                                                                    zoomControl: false,
+                                                                                    scaleControl: false,
+                                                                                    fullscreenControl: false,
+                                                                                    mapTypeControl: false,
+                                                                                    streetViewControl: false
+                                                                                });
+                                                                        }
+                                                                    </script>
+                                                                    <input id="latlng" type="hidden" value="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="_1nnjtm5">
+                                                            <div class="_1fnnpuw6" id="searchbar3">
+                                                                <div class="_qgv474" id="changebox">
+                                                                    <div class="_lbaapj" id="searchbar4">
+                                                                        <div class="_sa6nmh">
+                                                                            <div class="_1bwpfxm">
+                                                                                <button aria-label="뒤로" data-testid="title-back-button" type="button" class="_oda838">
+                                                                                    <span class="_e296pg">
+                                                                                        <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; fill: none; height: 24px; width: 24px; stroke: currentcolor; stroke-width: 2.66667; overflow: visible;">
+                                                                                            <g fill="none">
+                                                                                                <path d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932"></path>
+                                                                                            </g>
+                                                                                        </svg>
+                                                                                    </span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <h2 class="_1kkldxe" tabindex="-1">주소를 입력하세요.</h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="_1l0iogx" id="searchbar5">
+                                                                        <div class="_rcxi5a">
+                                                                            <div class="_171jtg" id="searchbar6">
+                                                                                <div class="_1a488ly">
+                                                                                    <div class="_1u9tuye">
+                                                                                        <svg viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                                                                            <path d="M8 .5C4.963.5 2.5 3 2.5 6s1.833 6.084 5.5 9.25C11.666 12.084 13.5 9 13.5 6A5.5 5.5 0 0 0 8 .5zM8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path>
+                                                                                        </svg>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <label class="_1yw7hpv" for="searchable-address-search">
+                                                                                    <div dir="ltr">
+                                                                                        <div class="_jro6t0"><input placeholder="주소를 입력하세요." aria-label="주소를 입력하세요." role="combobox" aria-autocomplete="list" aria-controls="autocomplete-results" aria-expanded="false" data-testid="address-autocomplete-input" class="_6snhnw" id="searchable-address-search" autocomplete="off" type="text" aria-describedby="searchable-address-description" value=""></div>
+                                                                                    </div>
+                                                                                </label>
+                                                                            </div>
+                                                                            <div id="searchable-address-description" class="_1u9fru1">추천 검색 결과를 확인하려면 계속
+                                                                                진행하세요.</div>
+                                                                            <ul class="_1p5zqcr1" id="autocomplete-results" role="listbox" aria-label="검색 제안" tabindex="-1">
+                                                                                <li class="_1ls6jxc" role="option" tabindex="-1" aria-selected="false" id="autocomplete-result-0" data-testid="autocomplete-result-0" onclick="getLocation()">
+                                                                                    <div class="_17z6oac">
+                                                                                        <svg viewbox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; height: 18px; width: 18px; fill: currentcolor;">
+                                                                                            <path d="m10.8431856 16.3486078c-.1735846.4112215-.6145289.7245188-1.05402708.6364803-.43949821-.0880384-.78907341-.5390778-.78915852-.9850881v-7l-7.05847799-.00695887c-.44831896-.00008467-.83440826-.31461578-.92290244-.75185074-.08849417-.43723497.14515025-.87590858.55850035-1.04859923l13.11043368-5.11686739c.3538762-.15082918.7644025-.07215022 1.0366284.19867383.272226.27082405.3513122.67923635.1997023 1.03129017z"></path>
+                                                                                        </svg>
+                                                                                    </div>
+                                                                                    <div id="thisplay">현재 위치 사용</div>
+                                                                                </li>
+                                                                                <li class="_12uiun8" role="option" tabindex="-1" aria-selected="false" id="autocomplete-result-1" loggingid="lys.location.enterAddressManually" eventdataschema="ListYourSpaceStepActionEvent" eventdata="[object Object]">주소를 직접 입력하세요</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_cawx7l0" style="display: none">
+                                                                <div class="_1p19jml">
+                                                                    <div class="_tq7o5o">
+                                                                        <div class="_sa6nmh">
+                                                                            <div class="_1bwpfxm">
+                                                                                <button aria-label="주소 입력란으로 돌아가기" data-testid="title-back-button" type="button" class="_oda838">
+                                                                                    <span class="_e296pg">
+                                                                                        <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; fill: none; height: 24px; width: 24px; stroke: currentcolor; stroke-width: 2.66667; overflow: visible;">
+                                                                                            <g fill="none">
+                                                                                                <path d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932"></path>
+                                                                                            </g>
+                                                                                        </svg>
+                                                                                    </span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <h2 class="_1kkldxe" tabindex="-1">주소 확인</h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="_1rasxxt8">
+                                                                            <div class="cx1v2qp dir dir-ltr" style="border-radius: 8px;">
+                                                                                <div class="_jro6t0">
+                                                                                    <div class="_e296pg" style="flex: 1 1 0%;">
+                                                                                        <div class="_sbmagf" style="background: none; border-radius: 8px 8px 0px 0px; inset: 0px 0px -1px;"></div>
+                                                                                        <div class="_tddesd">
+                                                                                            <label class="_1yw7hpv" for="state">
+                                                                                                <div class="_1m2ich98">
+                                                                                                    <div class="_11hx67x">주/도</div>
+                                                                                                </div>
+                                                                                                <div dir="ltr">
+                                                                                                    <div class="_fywymp7"><input aria-invalid="false" required="" class="_c5rhl5" id="state" autocomplete="off" type="text" aria-describedby="" value="">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div class="_t26glb" style="inset: 0px 0px -1px; border-radius: 8px 8px 0px 0px; border-top-color: var(--iw-ihca); border-right-color: var(--iw-ihca); border-bottom-color: var(--iw-ihca); border-left-color: var(--iw-ihca); border-width: 1px; z-index: 0;"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="_jro6t0">
+                                                                                    <div class="_e296pg" style="flex: 1 1 0%;">
+                                                                                        <div class="_sbmagf" style="background: none; border-radius: 0px; inset: 0px 0px -1px;"></div>
+                                                                                        <div class="_tddesd">
+                                                                                            <label class="_1yw7hpv" for="city">
+                                                                                                <div class="_1m2ich98">
+                                                                                                    <div class="_11hx67x">도시</div>
+                                                                                                </div>
+                                                                                                <div dir="ltr">
+                                                                                                    <div class="_fywymp7"><input aria-invalid="false" required="" class="_c5rhl5" id="city" autocomplete="off" type="text" aria-describedby="" value="">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div class="_t26glb" style="inset: 0px 0px -1px; border-radius: 0px; border-top-color: var(--iw-ihca); border-right-color: var(--iw-ihca); border-bottom-color: var(--iw-ihca); border-left-color: var(--iw-ihca); border-width: 1px; z-index: 0;"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="_jro6t0">
+                                                                                    <div class="_e296pg" style="flex: 1 1 0%;">
+                                                                                        <div class="_sbmagf" style="background: none; border-radius: 0px; inset: 0px 0px -1px;"></div>
+                                                                                        <div class="_tddesd">
+                                                                                            <label class="_1yw7hpv" for="street">
+                                                                                                <div class="_1m2ich98">
+                                                                                                    <div class="_11hx67x">지역(구)</div>
+                                                                                                </div>
+                                                                                                <div dir="ltr">
+                                                                                                    <div class="_fywymp7"><input aria-invalid="false" required="" class="_c5rhl5" id="street" autocomplete="off" type="text" aria-describedby="" value="">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div class="_t26glb" style="inset: 0px 0px -1px; border-radius: 0px; border-top-color: var(--iw-ihca); border-right-color: var(--iw-ihca); border-bottom-color: var(--iw-ihca); border-left-color: var(--iw-ihca); border-width: 1px; z-index: 0;"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="_jro6t0">
+                                                                                    <div class="_e296pg" style="flex: 1 1 0%;">
+                                                                                        <div class="_sbmagf" style="background: none; border-radius: 0px; inset: 0px 0px -1px;"></div>
+                                                                                        <div class="_tddesd">
+                                                                                            <label class="_1yw7hpv" for="apt">
+                                                                                                <div class="_1m2ich98">
+                                                                                                    <div class="_11hx67x">동,읍,면,리</div>
+                                                                                                </div>
+                                                                                                <div dir="ltr">
+                                                                                                    <div class="_fywymp7"><input aria-invalid="false" class="_c5rhl5" id="apt" autocomplete="off" type="text" aria-describedby="" value=""></div>
+                                                                                                </div>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div class="_t26glb" style="inset: 0px 0px -1px; border-radius: 0px; border-top-color: var(--iw-ihca); border-right-color: var(--iw-ihca); border-bottom-color: var(--iw-ihca); border-left-color: var(--iw-ihca); border-width: 1px; z-index: 0;"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="_jro6t0">
+                                                                                    <div class="_e296pg" style="flex: 1 1 0%;">
+                                                                                        <div class="_sbmagf" style="background: none; border-radius: 0px; inset: 0px 0px -1px;"></div>
+                                                                                        <div class="_tddesd">
+                                                                                            <label class="_1yw7hpv" for="zipcode">
+                                                                                                <div class="_1m2ich98">
+                                                                                                    <div class="_11hx67x">번지수</div>
+                                                                                                </div>
+                                                                                                <div dir="ltr">
+                                                                                                    <div class="_fywymp7"><input aria-invalid="false" required="" class="_c5rhl5" id="zipcode" autocomplete="off" type="text" aria-describedby="" value=""></div>
+                                                                                                </div>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div class="_t26glb" style="inset: 0px 0px -1px; border-radius: 0px; border-top-color: var(--iw-ihca); border-right-color: var(--iw-ihca); border-bottom-color: var(--iw-ihca); border-left-color: var(--iw-ihca); border-width: 1px; z-index: 0;"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="_jro6t0">
+                                                                                    <div class="_e296pg" style="flex: 1 1 0%;">
+                                                                                        <div class="_sbmagf" style="background: none; border-radius: 0px 0px 8px 8px; inset: 0px 0px -1px;"></div>
+                                                                                        <div class="_ey3tib">
+                                                                                            <label class="_19nw8j1" for="countryCode">
+                                                                                                <div class="_zhftk97">
+                                                                                                    <div class="_11hx67x">국가/지역</div>
+                                                                                                </div>
+                                                                                                <div class="_3hmsj">
+                                                                                                    <select name="countryCode" aria-invalid="false" required="" class="_1iwku6d" id="countryCode">
+                                                                                                        <option value="아프가니스탄">아프가니스탄 - AF</option>
+                                                                                                        <option value="올란드 제도">올란드 제도 - AX</option>
+                                                                                                        <option value="알바니아">알바니아 - AL</option>
+                                                                                                        <option value="알제리">알제리 - DZ</option>
+                                                                                                        <option value="아메리칸 사모아">아메리칸 사모아 - AS</option>
+                                                                                                        <option value="안도라">안도라 - AD</option>
+                                                                                                        <option value="앙골라">앙골라 - AO</option>
+                                                                                                        <option value="앵귈라">앵귈라 - AI</option>
+                                                                                                        <option value="앤티가 바부다">앤티가 바부다 - AG</option>
+                                                                                                        <option value="아르헨티나">아르헨티나 - AR</option>
+                                                                                                        <option value="아르메니아">아르메니아 - AM</option>
+                                                                                                        <option value="아루바">아루바 - AW</option>
+                                                                                                        <option value="오스트레일리아">오스트레일리아 - AU</option>
+                                                                                                        <option value="오스트리아">오스트리아 - AT</option>
+                                                                                                        <option value="아제르바이잔">아제르바이잔 - AZ</option>
+                                                                                                        <option value="바하마">바하마 - BS</option>
+                                                                                                        <option value="바레인">바레인 - BH</option>
+                                                                                                        <option value="방글라데시">방글라데시 - BD</option>
+                                                                                                        <option value="바베이도스">바베이도스 - BB</option>
+                                                                                                        <option value="벨라루스">벨라루스 - BY</option>
+                                                                                                        <option value="벨기에">벨기에 - BE</option>
+                                                                                                        <option value="벨리즈">벨리즈 - BZ</option>
+                                                                                                        <option value="베냉">베냉 - BJ</option>
+                                                                                                        <option value="버뮤다">버뮤다 - BM</option>
+                                                                                                        <option value="부탄">부탄 - BT</option>
+                                                                                                        <option value="볼리비아">볼리비아 - BO</option>
+                                                                                                        <option value="보스니아 헤르체고비나">보스니아 헤르체고비나 - BA</option>
+                                                                                                        <option value="보츠와나">보츠와나 - BW</option>
+                                                                                                        <option value="브라질">브라질 - BR</option>
+                                                                                                        <option value="영국령 인도양 식민지">영국령 인도양 식민지 - IO</option>
+                                                                                                        <option value="영국령 버진아일랜드">영국령 버진아일랜드 - VG</option>
+                                                                                                        <option value="브루나이">브루나이 - BN</option>
+                                                                                                        <option value="불가리아">불가리아 - BG</option>
+                                                                                                        <option value="부르키나파소">부르키나파소 - BF</option>
+                                                                                                        <option value="부룬디">부룬디 - BI</option>
+                                                                                                        <option value="캄보디아">캄보디아 - KH</option>
+                                                                                                        <option value="카메룬">카메룬 - CM</option>
+                                                                                                        <option value="캐나다">캐나다 - CA</option>
+                                                                                                        <option value="카보베르데">카보베르데 - CV</option>
+                                                                                                        <option value="네덜란드령 카리브">네덜란드령 카리브 - BQ</option>
+                                                                                                        <option value="케이맨 제도">케이맨 제도 - KY</option>
+                                                                                                        <option value="중앙 아프리카 공화국">중앙 아프리카 공화국 - CF</option>
+                                                                                                        <option value="차드">차드 - TD</option>
+                                                                                                        <option value="칠레">칠레 - CL</option>
+                                                                                                        <option value="중국">중국 - CN</option>
+                                                                                                        <option value="크리스마스섬">크리스마스섬 - CX</option>
+                                                                                                        <option value="코코스 제도">코코스 제도 - CC</option>
+                                                                                                        <option value="콜롬비아">콜롬비아 - CO</option>
+                                                                                                        <option value="코모로">코모로 - KM</option>
+                                                                                                        <option value="콩고">콩고 - CG</option>
+                                                                                                        <option value="쿡 제도">쿡 제도 - CK</option>
+                                                                                                        <option value="코스타리카">코스타리카 - CR</option>
+                                                                                                        <option value="크로아티아">크로아티아 - HR</option>
+                                                                                                        <option value="쿠바">쿠바 - CU</option>
+                                                                                                        <option value="퀴라소">퀴라소 - CW</option>
+                                                                                                        <option value="키프로스">키프로스 - CY</option>
+                                                                                                        <option value="체코">체코 - CZ</option>
+                                                                                                        <option value="콩고 민주 공화국">콩고 민주 공화국 - CD</option>
+                                                                                                        <option value="덴마크">덴마크 - DK</option>
+                                                                                                        <option value="지부티">지부티 - DJ</option>
+                                                                                                        <option value="도미니카">도미니카 - DM</option>
+                                                                                                        <option value="도미니카">도미니카 공화국 - DO</option>
+                                                                                                        <option value="동티모르">동티모르 - TL</option>
+                                                                                                        <option value="에콰도르">에콰도르 - EC</option>
+                                                                                                        <option value="이집트">이집트 - EG</option>
+                                                                                                        <option value="엘살바도르">엘살바도르 - SV</option>
+                                                                                                        <option value="적도 기니">적도 기니 - GQ</option>
+                                                                                                        <option value="에리트리아">에리트리아 - ER</option>
+                                                                                                        <option value="에스토니아">에스토니아 - EE</option>
+                                                                                                        <option value="에티오피아">에티오피아 - ET</option>
+                                                                                                        <option value="포클랜드 제도">포클랜드 제도(말비나스 군도) - FK</option>
+                                                                                                        <option value="페로 제도">페로 제도 - FO</option>
+                                                                                                        <option value="피지">피지 - FJ</option>
+                                                                                                        <option value="핀란드">핀란드 - FI</option>
+                                                                                                        <option value="프랑스">프랑스 - FR</option>
+                                                                                                        <option value="프랑스령 기아나">프랑스령 기아나 - GF</option>
+                                                                                                        <option value="프랑스령 폴리네시아">프랑스령 폴리네시아 - PF</option>
+                                                                                                        <option value="가봉">가봉 - GA</option>
+                                                                                                        <option value="감비아">감비아 - GM</option>
+                                                                                                        <option value="조지아">조지아 - GE</option>
+                                                                                                        <option value="독일">독일 - DE</option>
+                                                                                                        <option value="가나">가나 - GH</option>
+                                                                                                        <option value="지브롤터">지브롤터 - GI</option>
+                                                                                                        <option value="그리스">그리스 - GR</option>
+                                                                                                        <option value="그린란드">그린란드 - GL</option>
+                                                                                                        <option value="그레나다">그레나다 - GD</option>
+                                                                                                        <option value="과들루프">과들루프 - GP</option>
+                                                                                                        <option value="괌">괌 - GU</option>
+                                                                                                        <option value="과테말라">과테말라 - GT</option>
+                                                                                                        <option value="건지">건지 - GG</option>
+                                                                                                        <option value="기니">기니 - GN</option>
+                                                                                                        <option value="기니비사우">기니비사우 - GW</option>
+                                                                                                        <option value="가이아나">가이아나 - GY</option>
+                                                                                                        <option value="아이티">아이티 - HT</option>
+                                                                                                        <option value="온두라스">온두라스 - HN</option>
+                                                                                                        <option value="홍콩">홍콩 - HK</option>
+                                                                                                        <option value="헝가리">헝가리 - HU</option>
+                                                                                                        <option value="아이슬란드">아이슬란드 - IS</option>
+                                                                                                        <option value="인도">인도 - IN</option>
+                                                                                                        <option value="인도네시아">인도네시아 - ID</option>
+                                                                                                        <option value="이라크">이라크 - IQ</option>
+                                                                                                        <option value="아일랜드">아일랜드 - IE</option>
+                                                                                                        <option value="맨 섬">맨 섬 - IM</option>
+                                                                                                        <option value="이스라엘">이스라엘 - IL</option>
+                                                                                                        <option value="이탈리아">이탈리아 - IT</option>
+                                                                                                        <option value="코트디부아르">코트디부아르 - CI</option>
+                                                                                                        <option value="자메이카">자메이카 - JM</option>
+                                                                                                        <option value="일본">일본 - JP</option>
+                                                                                                        <option value="저지">저지 - JE</option>
+                                                                                                        <option value="요르단">요르단 - JO</option>
+                                                                                                        <option value="카자흐스탄">카자흐스탄 - KZ</option>
+                                                                                                        <option value="케냐">케냐 - KE</option>
+                                                                                                        <option value="키리바시">키리바시 - KI</option>
+                                                                                                        <option value="코소보">코소보 - XK</option>
+                                                                                                        <option value="쿠웨이트">쿠웨이트 - KW</option>
+                                                                                                        <option value="키르기스스탄">키르기스스탄 - KG</option>
+                                                                                                        <option value="라오스">라오스 - LA</option>
+                                                                                                        <option value="라트비아">라트비아 - LV</option>
+                                                                                                        <option value="레바논">레바논 - LB</option>
+                                                                                                        <option value="레소토">레소토 - LS</option>
+                                                                                                        <option value="라이베리아">라이베리아 - LR</option>
+                                                                                                        <option value="리비아">리비아 - LY</option>
+                                                                                                        <option value="리히텐슈타인">리히텐슈타인 - LI</option>
+                                                                                                        <option value="리투아니아">리투아니아 - LT</option>
+                                                                                                        <option value="룩셈부르크">룩셈부르크 - LU</option>
+                                                                                                        <option value="마카오">마카오 - MO</option>
+                                                                                                        <option value="북마케도니아">북마케도니아 - MK</option>
+                                                                                                        <option value="마다가스카르">마다가스카르 - MG</option>
+                                                                                                        <option value="말라위">말라위 - MW</option>
+                                                                                                        <option value="말레이시아">말레이시아 - MY</option>
+                                                                                                        <option value="몰디브">몰디브 - MV</option>
+                                                                                                        <option value="말리">말리 - ML</option>
+                                                                                                        <option value="몰타">몰타 - MT</option>
+                                                                                                        <option value="마셜 제도">마셜 제도 - MH</option>
+                                                                                                        <option value="마르티니크">마르티니크 - MQ</option>
+                                                                                                        <option value="모리타니">모리타니 - MR</option>
+                                                                                                        <option value="모리셔스">모리셔스 - MU</option>
+                                                                                                        <option value="마요트">마요트 - YT</option>
+                                                                                                        <option value="멕시코">멕시코 - MX</option>
+                                                                                                        <option value="미크로네시아">미크로네시아 - FM</option>
+                                                                                                        <option value="몰도바">몰도바 - MD</option>
+                                                                                                        <option value="모나코">모나코 - MC</option>
+                                                                                                        <option value="몽골">몽골 - MN</option>
+                                                                                                        <option value="몬테네그로">몬테네그로 - ME</option>
+                                                                                                        <option value="몬트세라트">몬트세라트 - MS</option>
+                                                                                                        <option value="모로코">모로코 - MA</option>
+                                                                                                        <option value="모잠비크">모잠비크 - MZ</option>
+                                                                                                        <option value="미얀마">미얀마 - MM</option>
+                                                                                                        <option value="나미비아">나미비아 - NA</option>
+                                                                                                        <option value="나우루">나우루 - NR</option>
+                                                                                                        <option value="네팔">네팔 - NP</option>
+                                                                                                        <option value="네덜란드">네덜란드 - NL</option>
+                                                                                                        <option value="뉴칼레도니아">뉴칼레도니아 - NC</option>
+                                                                                                        <option value="뉴질랜드">뉴질랜드 - NZ</option>
+                                                                                                        <option value="니카라과">니카라과 - NI</option>
+                                                                                                        <option value="니제르">니제르 - NE</option>
+                                                                                                        <option value="나이지리아">나이지리아 - NG</option>
+                                                                                                        <option value="니우에">니우에 - NU</option>
+                                                                                                        <option value="노퍽섬">노퍽섬 - NF</option>
+                                                                                                        <option value="북마리아나제도">북마리아나제도 - MP</option>
+                                                                                                        <option value="노르웨이">노르웨이 - NO</option>
+                                                                                                        <option value="오만">오만 - OM</option>
+                                                                                                        <option value="파키스탄">파키스탄 - PK</option>
+                                                                                                        <option value="팔라우">팔라우 - PW</option>
+                                                                                                        <option value="팔레스타인 지구">팔레스타인 지구 - PS</option>
+                                                                                                        <option value="파나마">파나마 - PA</option>
+                                                                                                        <option value="파푸아뉴기니">파푸아뉴기니 - PG</option>
+                                                                                                        <option value="파라과이">파라과이 - PY</option>
+                                                                                                        <option value="페루">페루 - PE</option>
+                                                                                                        <option value="필리핀">필리핀 - PH</option>
+                                                                                                        <option value="핏케언 섬">핏케언 섬 - PN</option>
+                                                                                                        <option value="폴란드">폴란드 - PL</option>
+                                                                                                        <option value="포르투갈">포르투갈 - PT</option>
+                                                                                                        <option value="푸에르토리코">푸에르토리코 - PR</option>
+                                                                                                        <option value="카타르">카타르 - QA</option>
+                                                                                                        <option value="리유니온">리유니온 - RE</option>
+                                                                                                        <option value="루마니아">루마니아 - RO</option>
+                                                                                                        <option value="러시아">러시아 - RU</option>
+                                                                                                        <option value="르완다">르완다 - RW</option>
+                                                                                                        <option value="생바르텔레미">생바르텔레미 - BL</option>
+                                                                                                        <option value="세인트헬레나">세인트헬레나 - SH</option>
+                                                                                                        <option value="세인트키츠 네비스">세인트키츠 네비스 - KN</option>
+                                                                                                        <option value="세인트루시아">세인트루시아 - LC</option>
+                                                                                                        <option value="생마르탱">생마르탱 - MF</option>
+                                                                                                        <option value="생피에르 미클롱">생피에르 미클롱 - PM</option>
+                                                                                                        <option value="세인트빈센트그레나딘">세인트빈센트그레나딘 - VC</option>
+                                                                                                        <option value="사모아">사모아 - WS</option>
+                                                                                                        <option value="산마리노">산마리노 - SM</option>
+                                                                                                        <option value="상투메 프린시페">상투메 프린시페 - ST</option>
+                                                                                                        <option value="사우디아라비아">사우디아라비아 - SA</option>
+                                                                                                        <option value="세네갈">세네갈 - SN</option>
+                                                                                                        <option value="세르비아">세르비아 - RS</option>
+                                                                                                        <option value="세이셸">세이셸 - SC</option>
+                                                                                                        <option value="시에라리온">시에라리온 - SL</option>
+                                                                                                        <option value="싱가포르">싱가포르 - SG</option>
+                                                                                                        <option value="신트마르턴">신트마르턴 - SX</option>
+                                                                                                        <option value="슬로바키아">슬로바키아 - SK</option>
+                                                                                                        <option value="슬로베니아">슬로베니아 - SI</option>
+                                                                                                        <option value="솔로몬 제도">솔로몬 제도 - SB</option>
+                                                                                                        <option value="소말리아">소말리아 - SO</option>
+                                                                                                        <option value="남아프리카">남아프리카 - ZA</option>
+                                                                                                        <option value="사우스조지아 사우스샌드위치 제도">사우스조지아 사우스샌드위치 제도 - GS</option>
+                                                                                                        <option value="대한민국">한국 - KR</option>
+                                                                                                        <option value="남수단">남수단 - SS</option>
+                                                                                                        <option value="스페인">스페인 - ES</option>
+                                                                                                        <option value="스리랑카">스리랑카 - LK</option>
+                                                                                                        <option value="수단">수단 - SD</option>
+                                                                                                        <option value="수리남">수리남 - SR</option>
+                                                                                                        <option value="스발바르제도-얀마웬섬">스발바르제도-얀마웬섬 - SJ</option>
+                                                                                                        <option value="에스와티니">에스와티니 - SZ</option>
+                                                                                                        <option value="스웨덴">스웨덴 - SE</option>
+                                                                                                        <option value="스위스">스위스 - CH</option>
+                                                                                                        <option value="대만">대만 - TW</option>
+                                                                                                        <option value="타지키스탄">타지키스탄 - TJ</option>
+                                                                                                        <option value="탄자니아">탄자니아 - TZ</option>
+                                                                                                        <option value="태국">태국 - TH</option>
+                                                                                                        <option value="토고">토고 - TG</option>
+                                                                                                        <option value="토켈라우">토켈라우 - TK</option>
+                                                                                                        <option value="통가">통가 - TO</option>
+                                                                                                        <option value="트리니다드 토바고">트리니다드 토바고 - TT</option>
+                                                                                                        <option value="튀니지">튀니지 - TN</option>
+                                                                                                        <option value="터키">터키 - TR</option>
+                                                                                                        <option value="투르크메니스탄">투르크메니스탄 - TM</option>
+                                                                                                        <option value="터크스 케이커스 제도">터크스 케이커스 제도 - TC</option>
+                                                                                                        <option value="투발루">투발루 - TV</option>
+                                                                                                        <option value="미국령 버진아일랜드">미국령 버진아일랜드 - VI</option>
+                                                                                                        <option value="우간다">우간다 - UG</option>
+                                                                                                        <option value="우크라이나">우크라이나 - UA</option>
+                                                                                                        <option value="아랍에미리트">아랍에미리트 - AE</option>
+                                                                                                        <option value="영국">영국 - GB</option>
+                                                                                                        <option value="미국">미국 - US</option>
+                                                                                                        <option value="우루과이">우루과이 - UY</option>
+                                                                                                        <option value="우즈베키스탄">우즈베키스탄 - UZ</option>
+                                                                                                        <option value="바누아투">바누아투 - VU</option>
+                                                                                                        <option value="바티칸 시국">바티칸 시국 - VA</option>
+                                                                                                        <option value="베네수엘라">베네수엘라 - VE</option>
+                                                                                                        <option value="베트남">베트남 - VN</option>
+                                                                                                        <option value="왈리스-푸투나 제도">왈리스-푸투나 제도 - WF</option>
+                                                                                                        <option value="서사하라">서사하라 - EH</option>
+                                                                                                        <option value="예멘">예멘 - YE</option>
+                                                                                                        <option value="잠비아">잠비아 - ZM</option>
+                                                                                                        <option value="짐바브웨">짐바브웨 - ZW</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                            </label>
+                                                                                            <div class="_lmil0">
+                                                                                                <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                                                                                    <g fill="none">
+                                                                                                        <path d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932"></path>
+                                                                                                    </g>
+                                                                                                </svg>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="_t26glb" style="inset: 0px 0px -1px; border-radius: 0px 0px 8px 8px; border-top-color: var(--iw-ihca); border-right-color: var(--iw-ihca); border-bottom-color: var(--iw-ihca); border-left-color: var(--iw-ihca); border-width: 1px; z-index: 0;"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="_5tqvll">
+                                                                        <div class="_1eaes69">
+                                                                            <button type="button" id="location_insert" class="_1ku51f04">확인</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_1px78l2">
+                                <div class="_11go4zx">
+                                    <div class="_5kaapu">
+                                        <span class="a8jt5op dir dir-ltr">진행 상황: 10단계 중 3단계</span>
+                                        <div class="_9kv7q8">
+                                            <div class="_n38lrm" style="transition: transform 0.6s ease 0s; transform: translateX(27%);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="_7lnmui">
+                                        <div class="_r5r508">
+                                            <button aria-label="이전 단계로 돌아가기" location="[object Object]" match="[object Object]" staticcontext="[object Object]" type="button" onclick="location.href='/pages/hostoption4'" class="_za4ekfm">뒤로</button>
+                                        </div>
+                                        <div class="_dt53i0">
+                                            <button location="[object Object]" match="[object Object]" staticcontext="[object Object]" type="button" id="btn_next" class="_1ku51f04" onclick="location.href='/pages/hostoption7'" disabled="disabled">다음</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <div class="_b21f4g">
+                    <div aria-live="polite" aria-atomic="true"></div>
+                    <div aria-live="assertive" aria-atomic="true"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #fb_xdm_frame_https {
+            visibility: hidden
+        }
+    </style>
+    <div id="fb-root"></div>
+    <div id="authModals"></div>
+    <script src="/lib/js/hostoption5.js"></script>
+</body>
+
+</html>

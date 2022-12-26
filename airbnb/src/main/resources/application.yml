@@ -1,0 +1,26 @@
+pagehelper:
+  helper-dialect: h2
+  auto-dialect: true
+  page-size-zero: false
+  reasonable: true
+  offset-as-page-num: false
+  row-bounds-with-count: false
+  auto-runtime-dialect: false
+  close-conn: true
+  default-count: true
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@db20220622131607_high?TNS_ADMIN=/home/ubuntu/airbnbProject/airbnb-0.0.1-SNAPSHOT.jar/Wallet_DB20220622131607.jar
+    username: admin
+    password: '!Zz9902191178926zz'
+    hikari:
+      main:
+        driver-class-name: oracle.jdbc.OracleDriver
+        jdbc-url: jdbc:oracle:thin:@db20220622131607_high?TNS_ADMIN=/home/ubuntu/airbnbProject/airbnb-0.0.1-SNAPSHOT.jar/Wallet_DB20220622131607.jar
+        username: admin
+        password: '!Zz9902191178926zz'
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/

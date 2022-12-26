@@ -1,0 +1,446 @@
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/" data-is-hyperloop="true" data-hyperloop-version="1" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://a0.muscache.com/airbnb/static/packages/dls/dls-lite_cereal-32f4a55b7a0ed9ca55714ba7265a6c84.css" rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
+    <title>로그인 및 보안 - 계정 관리 - 에어비앤비</title>
+    <link rel="stylesheet" href="/lib/css/account_loginBoan.css">
+    <link rel="stylesheet" href="/lib/css/account_header.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+
+<body class="with-new-header">
+    <div id="site-skip-links">
+        <a class="screen-reader-only screen-reader-only-focusable skip-to-content" data-hook="skip-to-content" href="#site-content">콘텐츠로 바로가기</a>
+        <span id="popups-everywhere-skip-link"></span>
+    </div>
+    <div id="smart-banner"></div>
+    <div id="flash-container" class="flash-container" role="alert" aria-live="assertive"></div>
+    <div id="education-overlay-root"></div>
+    <div data-application="true" th:fragment="account_pwChange(id)">
+        <div id="iddiv" th:text="${id}" hidden></div>
+        <div dir="ltr">
+            <div data-theme="" class="t1bgcr6e ">
+                <div>
+                    <div>
+                        <div style="--view-to-view-transition-element-opacity:0;--view-to-view-transition-element-visibility:hidden">
+                            <div class="_is5jnq">
+                                <div class="_16grqhk">
+                                    <!--acc_header nav-->
+                                    <div th:replace="fragment/acc_header :: acc_header"></div>
+                                    <!--acc_header nav-->
+                                    <main id="site-content">
+                                        <div class="_88xxct">
+                                            <div class="_mwt4r90">
+                                                <div style="margin-top:0;margin-bottom:0;margin-left:0;margin-right:0">
+                                                    <div style="margin-bottom:48px">
+                                                        <section>
+                                                            <div style="margin-top:40px;margin-bottom:40px">
+                                                                <nav aria-label="계정">
+                                                                    <ol class="_1ckj08w">
+                                                                        <li class="_36rlri">
+                                                                            <span class="_121z06r2">
+                                                                                <a href="/pages/account_main" class="_sgg9wmi" aria-busy="false">계정</a>
+                                                                            </span>
+                                                                        </li>
+                                                                        <li class="_36rlri">
+                                                                            <div class="_36rlri" style="margin-left:16px;margin-right:16px">
+                                                                                <svg viewbox="0 0 18 18" aria-hidden="true" focusable="false" style="height:10px;width:10px;fill:#767676">
+                                                                                    <path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd" />
+                                                                                </svg>
+                                                                            </div>
+                                                                            <span aria-current="step" class="_121z06r2">로그인 및 보안</span>
+                                                                        </li>
+                                                                    </ol>
+                                                                </nav>
+                                                                <div style="margin-top:12px">
+                                                                    <h1 tabindex="-1" elementtiming="LCP-target" class="_14i3z6h">
+                                                                        <div class="_1yrl4d7p">로그인 및 보안</div>
+                                                                    </h1>
+                                                                </div>
+                                                            </div>
+                                                            <div class="_88xxct">
+                                                                <div class="_2h22gn">
+                                                                    <div class="_169grxv2">
+                                                                        <div style="margin-top:32px">
+                                                                            <section>
+                                                                                <div class="_1mbllh6j">
+                                                                                    <h2 tabindex="-1" elementtiming="LCP-target" class="_14i3z6h">
+                                                                                        <div class="_s1tlw0m">로그인</div>
+                                                                                    </h2>
+                                                                                </div>
+                                                                                <div class="_s50zru">
+                                                                                    <div style="margin-top:24px">
+                                                                                        <div class="_hgs47m">
+                                                                                            <div class="_n5lh69r">
+                                                                                                <div class="_1p3joamp">비밀번호</div>
+                                                                                            </div>
+                                                                                            <div class="_1rtgmd8y">
+                                                                                                <div class="_1p3joamp">
+                                                                                                    <div id="_button1" class="_1asnseo">
+                                                                                                        <button type="button" class="_b0ybw8s" aria-busy="false" id="button1">업데이트</button>
+                                                                                                        <button type="button" class="_b0ybw8s _kkkkkkk" aria-busy="false" id="button2">취소</button>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div style="margin-top: 8px; margin-bottom: 24px;">
+                                                                                            <form class="form1 _kkkkkkk" id="form1">
+                                                                                                <div style="margin-bottom: 16px;">
+                                                                                                    <div class="_9hxttoo">
+                                                                                                        <div style="margin-bottom: 8px;">
+                                                                                                            <label class="_rin72m" for="old_password">
+                                                                                                                <div class="_czm8crp">현재 비밀번호</div>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                        <div dir="ltr">
+                                                                                                            <div class="_1wcr140x">
+                                                                                                                <div class="_178faes">
+                                                                                                                    <input class="_14fdu48d" id="old_password" name="old_password" type="password" value="">
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="_9hxttoo">
+                                                                                                        <div style="margin-bottom: 8px;">
+                                                                                                            <label class="_rin72m" for="userPass1">
+                                                                                                                <div class="_czm8crp">새 비밀번호</div>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                        <div dir="ltr">
+                                                                                                            <div class="_1wcr140x">
+                                                                                                                <div class="_178faes">
+                                                                                                                    <input class="_14fdu48d checking" id="userPass1" name="userPass1" type="password" value="">
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="_9hxttoo">
+                                                                                                        <div style="margin-bottom: 8px;">
+                                                                                                            <label class="_rin72m" for="userPass2">
+                                                                                                                <div class="_czm8crp">비밀번호 확인</div>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                        <div dir="ltr">
+                                                                                                            <div class="_1wcr140x">
+                                                                                                                <div class="_178faes">
+                                                                                                                    <input class="_14fdu48d checking" id="userPass2" name="userPass2" type="password" value="">
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div id="airlock-inline-container"></div>
+                                                                                                <button type="submit" class="_kt3i5a4" aria-busy="false">
+                                                                                                    <span class="_ftj2sg4">비밀번호 변경</span>
+                                                                                                </button>
+                                                                                            </form>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </section>
+                                                                            <section>
+                                                                                <div class="_1mbllh6j">
+                                                                                    <h2 tabindex="-1" elementtiming="LCP-target" class="_14i3z6h">
+                                                                                        <div class="_s1tlw0m">SNS 계정
+                                                                                        </div>
+                                                                                    </h2>
+                                                                                </div>
+                                                                                <form action="https://www.facebook.com/v2.0/dialog/oauth?client_id=138566025676&amp;redirect_uri=https%3A%2F%2Fwww.airbnb.co.kr%2Fusers%2Fpopulate_from_facebook&amp;scope=email%2Cuser_birthday%2Cuser_likes%2Cuser_hometown%2Cuser_location%2Cuser_friends&amp;state=redirect_params%5Baction%5D%3Daccount_settings_login_and_security_data%26redirect_params%5Bcontroller%5D%3Dusers%26redirect_params%5Bcurrency%5D%3DKRW%26redirect_params%5Bformat%5D%3Djson%26redirect_params%5Blocale%5D%3Dko" data-populate_uri="https://www.airbnb.co.kr/users/populate_from_facebook" method="post"><input type="hidden" name="service" value="facebook" />
+                                                                                    <div class="_1okh7pi0">
+                                                                                        <div class="_12d0llg5">
+                                                                                            <div class="_qo24lwc">
+                                                                                                <span class="_czm8crp">
+                                                                                                    <div class="_1p3joamp">페이스북</div>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="_1iti0ju">
+                                                                                                <span class="_czm8crp">
+                                                                                                    <button type="button" class="_b0ybw8s" aria-busy="false">
+                                                                                                        <div class="_ba3mo2p">연결</div>
+                                                                                                    </button>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div style="margin-top:8px">
+                                                                                            <div class="_1jlnvra2">
+                                                                                                <!-- 페이스북 연동시 연결or연결 되지 않음 출력-->
+                                                                                                <div class="_ylytgbo">연결되지 않음</div>
+                                                                                                <!-- 페이스북 연동시 연결or연결 되지 않음 출력-->
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </form>
+                                                                                <form action="/oauth/delete" method="post"><input type="hidden" name="service" value="google" />
+                                                                                    <div class="_1okh7pi0">
+                                                                                        <div class="_12d0llg5">
+                                                                                            <div class="_qo24lwc">
+                                                                                                <span class="_czm8crp">
+                                                                                                    <div class="_1p3joamp">구글</div>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="_1iti0ju">
+                                                                                                <span class="_czm8crp">
+                                                                                                    <!--클릭시 구글연결 해제-->
+                                                                                                    <button type="button" class="_b0ybw8s" aria-busy="false">
+                                                                                                        <div class="_ba3mo2p">연결 해제</div>
+                                                                                                    </button>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div style="margin-top:8px">
+                                                                                            <div class="_1jlnvra2">
+                                                                                                <div class="_czm8crp">연결됨</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </section>
+                                                                            <section>
+                                                                                <div class="_1mbllh6j">
+                                                                                    <h2 tabindex="-1" elementtiming="LCP-target" class="_14i3z6h">
+                                                                                        <div class="_s1tlw0m">기기 접속 기록
+                                                                                        </div>
+                                                                                    </h2>
+                                                                                </div>
+                                                                                <div class="_s50zru">
+                                                                                    <div class="_13cc5fty">
+                                                                                        <div class="_ibpnq6a">
+                                                                                            <div style="margin-top:20px">
+                                                                                                <svg viewbox="0 0 24 24" role="img" aria-hidden="false" aria-label="데스트톱 기기" focusable="false" style="height:30px;width:30px;display:block;fill:currentColor">
+                                                                                                    <path d="m22.5 2h-21c-.8271484 0-1.5.6728516-1.5 1.5v14c0 .8271484.6728516 1.5 1.5 1.5h8.5v3h-5.5c-.2763672 0-.5.2236328-.5.5s.2236328.5.5.5h15c.2763672 0 .5-.2236328.5-.5s-.2236328-.5-.5-.5h-5.5v-3h8.5c.8271484 0 1.5-.6728516 1.5-1.5v-14c0-.8271484-.6728516-1.5-1.5-1.5zm-21 1h21c.2753906 0 .5.2241211.5.5v11.5h-22v-11.5c0-.2758789.2241211-.5.5-.5zm11.5 19h-2v-3h2zm9.5-4h-21c-.2758789 0-.5-.2246094-.5-.5v-1.5h22v1.5c0 .2753906-.2246094.5-.5.5z" />
+                                                                                                </svg>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="_14dnguc9">
+                                                                                            <div class="_1rlifxji">
+                                                                                                <div class="_12d0llg5">
+                                                                                                    <div class="_qo24lwc">
+                                                                                                        <span class="_czm8crp">
+                                                                                                            <div class="_1p3joamp">
+                                                                                                                <span class="_1p3joamp">Windows10.0
+                                                                                                                                        <!-- -->
+                                                                                                                    ·
+                                                                                                                </span>
+                                                                                                                <span class="_czm8crp">Chrome</span>
+                                                                                                            </div>
+                                                                                                        </span>
+                                                                                                    </div>
+                                                                                                    <div class="_1iti0ju">
+                                                                                                        <span class="_czm8crp">
+                                                                                                            <button type="button" class="_b0ybw8s" aria-busy="false">
+                                                                                                                <div class="_ba3mo2p">기기에서로그아웃하기</div>
+                                                                                                            </button>
+                                                                                                        </span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div style="margin-top:8px">
+                                                                                                    <div class="_1jlnvra2">
+                                                                                                        <!--기기접속 기록 출력 부분-->
+                                                                                                        <span class="_czm8crp">Namyangju
+                                                                                                                               <!-- -->
+                                                                                                            ,
+                                                                                                                               <!-- -->
+                                                                                                            Gyeonggi-do
+                                                                                                                               <!-- -->
+                                                                                                            ·
+                                                                                                                               <!-- -->
+                                                                                                        </span>
+                                                                                                        <span class="_czm8crp">2022년 6월 30일 00:21</span>
+                                                                                                        <!--기기접속 기록 출력 부분-->
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="_s50zru">
+                                                                                    <div class="_13cc5fty">
+                                                                                        <div class="_ibpnq6a">
+                                                                                            <div style="margin-top:20px">
+                                                                                                <svg viewbox="0 0 24 24" role="img" aria-hidden="false" aria-label="데스트톱 기기" focusable="false" style="height:30px;width:30px;display:block;fill:currentColor">
+                                                                                                    <path d="m22.5 2h-21c-.8271484 0-1.5.6728516-1.5 1.5v14c0 .8271484.6728516 1.5 1.5 1.5h8.5v3h-5.5c-.2763672 0-.5.2236328-.5.5s.2236328.5.5.5h15c.2763672 0 .5-.2236328.5-.5s-.2236328-.5-.5-.5h-5.5v-3h8.5c.8271484 0 1.5-.6728516 1.5-1.5v-14c0-.8271484-.6728516-1.5-1.5-1.5zm-21 1h21c.2753906 0 .5.2241211.5.5v11.5h-22v-11.5c0-.2758789.2241211-.5.5-.5zm11.5 19h-2v-3h2zm9.5-4h-21c-.2758789 0-.5-.2246094-.5-.5v-1.5h22v1.5c0 .2753906-.2246094.5-.5.5z" />
+                                                                                                </svg>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="_14dnguc9">
+                                                                                            <div class="_1rlifxji">
+                                                                                                <div class="_12d0llg5">
+                                                                                                    <div class="_qo24lwc">
+                                                                                                        <span class="_czm8crp">
+                                                                                                            <div class="_1p3joamp">
+                                                                                                                <span class="_1p3joamp">Windows10.0
+                                                                                                                                        <!-- -->
+                                                                                                                    ·
+                                                                                                                </span>
+                                                                                                                <span class="_czm8crp">Chrome</span>
+                                                                                                            </div>
+                                                                                                            <div class="_1p3joamp">
+                                                                                                                <div class="_1ko9l4k">
+                                                                                                                    <div class="_11bwvo6">
+                                                                                                                        <div class="_114g51qn">현재 세션</div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </span>
+                                                                                                    </div>
+                                                                                                    <div class="_1iti0ju">
+                                                                                                        <span class="_czm8crp">
+                                                                                                            <button type="button" class="_b0ybw8s" aria-busy="false">
+                                                                                                                <div class="_ba3mo2p">기기에서 로그아웃하기</div>
+                                                                                                            </button>
+                                                                                                        </span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div style="margin-top:8px">
+                                                                                                    <div class="_1jlnvra2">
+                                                                                                        <span class="_czm8crp">Namyangju
+                                                                                                                               <!-- -->
+                                                                                                            ,
+                                                                                                                               <!-- -->
+                                                                                                            Gyeonggi-do
+                                                                                                                               <!-- -->
+                                                                                                            ·
+                                                                                                                               <!-- -->
+                                                                                                        </span>
+                                                                                                        <span class="_czm8crp">2022년6월 29일04:49</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="_s50zru">
+                                                                                    <div class="_13cc5fty">
+                                                                                        <div class="_ibpnq6a">
+                                                                                            <div style="margin-top:20px">
+                                                                                                <svg viewbox="0 0 24 24" role="img" aria-hidden="false" aria-label="데스트톱 기기" focusable="false" style="height:30px;width:30px;display:block;fill:currentColor">
+                                                                                                    <path d="m22.5 2h-21c-.8271484 0-1.5.6728516-1.5 1.5v14c0 .8271484.6728516 1.5 1.5 1.5h8.5v3h-5.5c-.2763672 0-.5.2236328-.5.5s.2236328.5.5.5h15c.2763672 0 .5-.2236328.5-.5s-.2236328-.5-.5-.5h-5.5v-3h8.5c.8271484 0 1.5-.6728516 1.5-1.5v-14c0-.8271484-.6728516-1.5-1.5-1.5zm-21 1h21c.2753906 0 .5.2241211.5.5v11.5h-22v-11.5c0-.2758789.2241211-.5.5-.5zm11.5 19h-2v-3h2zm9.5-4h-21c-.2758789 0-.5-.2246094-.5-.5v-1.5h22v1.5c0 .2753906-.2246094.5-.5.5z" />
+                                                                                                </svg>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="_14dnguc9">
+                                                                                            <div class="_1rlifxji">
+                                                                                                <div class="_12d0llg5">
+                                                                                                    <div class="_qo24lwc">
+                                                                                                        <span class="_czm8crp">
+                                                                                                            <div class="_1p3joamp">
+                                                                                                                <span class="_1p3joamp">Windows10.0
+                                                                                                                                        <!-- -->
+                                                                                                                    ·
+                                                                                                                </span>
+                                                                                                                <span class="_czm8crp">Chrome</span>
+                                                                                                            </div>
+                                                                                                        </span>
+                                                                                                    </div>
+                                                                                                    <div class="_1iti0ju">
+                                                                                                        <span class="_czm8crp">
+                                                                                                            <button type="button" class="_b0ybw8s" aria-busy="false">
+                                                                                                                <div class="_ba3mo2p">기기에서 로그아웃하기</div>
+                                                                                                            </button>
+                                                                                                        </span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div style="margin-top:8px">
+                                                                                                    <div class="_1jlnvra2">
+                                                                                                        <span class="_czm8crp">Namyangju
+                                                                                                                               <!-- -->
+                                                                                                            ,
+                                                                                                                               <!-- -->
+                                                                                                            Gyeonggi-do
+                                                                                                                               <!-- -->
+                                                                                                            ·
+                                                                                                                               <!-- -->
+                                                                                                        </span>
+                                                                                                        <span class="_czm8crp">2022년 6월 20일 06:23</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </section>
+                                                                            <span id="FMP-target"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="_17pxz94u"></div>
+                                                                    <div class="_17pxz94u">
+                                                                        <div class="_16tcko6">
+                                                                            <section>
+                                                                                <div style="margin-top: 32px; margin-bottom: 32px;">
+                                                                                    <svg viewbox="0 0 24 24" aria-hidden="true" style="height: 40px; width: 40px; display: block; fill: rgb(255, 180, 0);">
+                                                                                        <path d="m5 20.5a.5.5 0 0 1 -.5.5h-.5v.5a.5.5 0 0 1 -1 0v-.5h-.5a.5.5 0 0 1 0-1h .5v-.5a.5.5 0 0 1 1 0v .5h.5a.5.5 0 0 1 .5.5zm1.5 1.5a.5.5 0 1 0 .5.5.5.5 0 0 0 -.5-.5zm16-20h-.5v-.5a.5.5 0 0 0 -1 0v .5h-.5a.5.5 0 0 0 0 1h .5v.5a.5.5 0 0 0 1 0v-.5h.5a.5.5 0 0 0 0-1zm-2.58 4.87a13.41 13.41 0 0 1 -6.76-3.2.37.37 0 0 0 -.63.26l.08 16.22a.38.38 0 0 0 .55.32 11.98 11.98 0 0 0 7.07-13.31.37.37 0 0 0 -.31-.3z"></path>
+                                                                                        <path d="m14.39 8.32a1.93 1.93 0 0 0 -3.66 0l-2.42 4.85a3.09 3.09 0 0 0 -.4 1.61 2.36 2.36 0 0 0 2.23 2.23 3.95 3.95 0 0 0 2.42-1.06 3.95 3.95 0 0 0 2.42 1.06 2.36 2.36 0 0 0 2.23-2.23 3.09 3.09 0 0 0 -.4-1.61zm-2.72 4.38c0-.05.01-1.23.89-1.23s.88 1.18.88 1.23a3.25 3.25 0 0 1 -.88 1.83 3.25 3.25 0 0 1 -.89-1.83zm3.31 3.31a2.92 2.92 0 0 1 -1.71-.77 4.3 4.3 0 0 0 1.17-2.54 2.02 2.02 0 0 0 -1.8-2.22l-.08-.01a2.02 2.02 0 0 0 -1.89 2.15l.01.08a4.29 4.29 0 0 0 1.17 2.54 2.92 2.92 0 0 1 -1.71.77 1.36 1.36 0 0 1 -1.23-1.23 2.13 2.13 0 0 1 .29-1.16l2.42-4.85c.33-.65.55-.76.94-.76s.61.11.94.76l2.42 4.85a2.13 2.13 0 0 1 .29 1.16 1.36 1.36 0 0 1 -1.23 1.23zm7.01-10.35a.5.5 0 0 0 -.43-.4 13.03 13.03 0 0 1 -8.68-4.57.52.52 0 0 0 -.77 0 13.03 13.03 0 0 1 -8.68 4.57.5.5 0 0 0 -.43.4c-1.58 8.19 1.55 14.02 9.3 17.31a.5.5 0 0 0 .39 0c7.75-3.29 10.87-9.11 9.3-17.31zm-9.49 16.3c-7.1-3.09-9.91-8.25-8.57-15.76a13.98 13.98 0 0 0 8.57-4.43 13.98 13.98 0 0 0 8.57 4.43c1.33 7.51-1.48 12.67-8.57 15.76z" fill="#484848"></path>
+                                                                                    </svg>
+                                                                                    <div style="margin-top: 16px; margin-bottom: 16px;">
+                                                                                        <h2 tabindex="-1" elementtiming="LCP-target" class="_14i3z6h">
+                                                                                            <div class="_1p0spma2">계정 보안 유지</div>
+                                                                                        </h2>
+                                                                                    </div>
+                                                                                    <div class="_czm8crp">에어비앤비는 최고의 보안을위해 계정을 정기적으로 검토합니다. 계정 보안을 강화할 수 있는 조치가 더 있다면 알려드리겠습니다.</div>
+                                                                                    <div class="_czm8crp">
+                                                                                        <div style="margin-top: 16px;">
+                                                                                            <a href="/help/article/241/i-m-a-guest--what-are-some-safety-tips-i-can-follow" target="_blank" class="_12jvhwr" aria-busy="false">게스트</a>
+                                                                                            및
+                                                                                            <a href="/help/article/231/i-m-a-host--what-are-some-safety-tips-i-can-follow" target="_blank" class="_12jvhwr" aria-busy="false">호스트</a>를 위한 안전 팁에 대해 알아보세요.
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </section>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <section>
+                                                                    <div class="_1mbllh6j">
+                                                                        <h2 tabindex="-1" elementtiming="LCP-target" class="_14i3z6h">
+                                                                            <div class="_s1tlw0m">계정</div>
+                                                                        </h2>
+                                                                    </div>
+                                                                    <div class="_1okh7pi0">
+                                                                        <div class="_12d0llg5">
+                                                                            <div class="_qo24lwc">
+                                                                                <span class="_czm8crp">계정 비활성화</span>
+                                                                            </div>
+                                                                            <div class="_1iti0ju">
+                                                                                <span class="_czm8crp">
+                                                                                    <div class="_1kj5cq5">
+                                                                                        <a href="/account-delete/reasons" class="_12jvhwr" aria-busy="false">비활성화</a>
+                                                                                    </div>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </main>
+                                </div>
+                                <!--footer-->
+                                <div th:replace="fragment/footer :: footer"></div>
+                                <!--footer-->
+                            </div>
+                            <div class="t2pjd0h dir dir-ltr">
+                                <div class="t6qlz27 dir dir-ltr" data-testid="Incoming"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_b21f4g">
+                    <div aria-live="polite" aria-atomic="true"></div>
+                    <div aria-live="assertive" aria-atomic="true"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fb-root"></div>
+    <div id="authModals"></div>
+</body>
+<script src="/lib/js/account_loginBoan.js"></script>
+<script src="/lib/js/acc_loginpop.js"></script>
+
+</html>
